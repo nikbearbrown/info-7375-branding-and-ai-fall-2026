@@ -1,6 +1,6 @@
 # INFO 7375 — Branding and AI
 
-Public repository: [info-7375-branding-and-ai](https://github.com/nikbearbrown/info-7375-branding-and-ai). The publication includes the course, narrative readings, and available book images. Local framework checkouts, prior course records, research, and production exports are excluded. The older book README describes the broader local workspace; those optional tools are not dependencies of the Fall 2026 course.
+Public repository: [info-7375-branding-and-ai-fall-2026](https://github.com/nikbearbrown/info-7375-branding-and-ai-fall-2026). The publication includes the course, narrative readings, and available book images. Local framework checkouts, prior course records, research, and production exports are excluded. The older book README describes the broader local workspace; those optional tools are not dependencies of the Fall 2026 course. The separate private INFO-7375-Branding-and-AI repository is an earlier course archive and remains unchanged.
 
 **Fall 2026 · Predict → Build It → Use It → Ship It → Verify**
 
