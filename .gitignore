@@ -21,6 +21,8 @@
 !/assignments/fall-2026/
 # Instructor's worked examples (public — no résumé data, only public-CV skill strings)
 !/assignments/nik-bear-brown/
+# …but nested repos inside it are their own GitHub projects, linked from its README, never embedded
+/assignments/nik-bear-brown/brutalist-figma-claude/
 !/fall-2026/
 /fall-2026/*
 !/fall-2026/README.md

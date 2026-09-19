@@ -10,6 +10,8 @@
 
 **Student:** Nik Bear Brown · **Board:** Figma (Greenhouse) · **Checked:** 2026-09-19 · **Part 1 of 4** · 10 pts
 
+**Appendix:** [one board is not a search](part-1-appendix-seven-boards.md) — the same method run on seven companies and three ATSs, which found a closer fit (Webflow's Senior Developer Educator, US remote) and changed what word I search for.
+
 ---
 
 ## How I found it (method, so you can repeat it)
