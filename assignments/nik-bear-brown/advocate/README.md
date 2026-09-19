@@ -14,12 +14,13 @@
 
 | File | What it is |
 |---|---|
-| `advocate-roles-2026-09-19.md` | **Start here.** The cross-company roll-up: six roles at four companies in one table, what each of the seven boards looks like, and the three companies the method cannot read (Framer, Adobe, Sketch/InVision/Mural). |
+| `figma-advocate-roles.md` | **The narrowed Figma list** — only the three Designer Advocate postings (US · Partnerships · London) and the five enablement neighbours, with keep / consider / pass on each and links out to the wider lists. |
+| `advocate-roles-2026-09-19.md` | **Start here for the whole field.** The cross-company roll-up: six roles at four companies in one table, what each of the seven boards looks like, and the three companies the method cannot read (Framer, Adobe, Sketch/InVision/Mural). |
 | `webflow-jobs-i-am-keeping.md` | Senior Developer Educator — US remote, new position, $113K–$155K. The strongest fit at a location I can hold. |
 | `notion-jobs-i-am-keeping.md` | Technical Education Specialist (NYC, best description, wrong geography) and Developer Advocate (NYC/SF, four months old — check it is still real). |
 | `writer-jobs-i-am-keeping.md` | Senior AI learning designer, rapid content — hybrid at six hubs, explicitly *no AI-generated voice*, so I would be on camera myself. |
 | `canva-jobs-i-am-keeping.md` | Nothing kept — Canva's education roles are Sydney/APAC contracts. Kept as the record that I looked, and why to re-check monthly. |
-| *(Figma)* | The Figma keep — Designer Advocate — lives in [`../assignment-2/evidence/figma-jobs-i-am-keeping.md`](../assignment-2/evidence/figma-jobs-i-am-keeping.md) because it is the Assignment 2 dream job. |
+| *(Figma keep)* | The Designer Advocate keep card lives in [`../assignment-2/evidence/figma-jobs-i-am-keeping.md`](../assignment-2/evidence/figma-jobs-i-am-keeping.md) because it is the Assignment 2 dream job. |
 
 ## What the postings ask for, and what I will build here
 
