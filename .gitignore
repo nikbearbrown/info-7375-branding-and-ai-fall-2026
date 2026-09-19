@@ -19,6 +19,8 @@
 !/assignments/
 /assignments/*
 !/assignments/fall-2026/
+# Instructor's worked examples (public — no résumé data, only public-CV skill strings)
+!/assignments/nik-bear-brown/
 !/fall-2026/
 /fall-2026/*
 !/fall-2026/README.md
