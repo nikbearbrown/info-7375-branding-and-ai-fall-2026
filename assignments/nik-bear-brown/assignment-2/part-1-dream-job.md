@@ -1,10 +1,16 @@
-# Assignment 2 — Part 1: Dream Job (10 pts)
+# Assignment 2, Part 1 — My Dream Job at Figma (worked example)
 
-**Student:** Nik Bear Brown · **Board:** Figma (Greenhouse) · **Checked:** 2026-09-19
+## Executive summary
 
-> This is the instructor's worked example. It uses my real goal — remote, part-time or
-> consulting work, or educational-material creation, at Figma — so the gaps in Part 2 are
-> real gaps, not staged ones.
+**What this is.** The instructor's own answer to Part 1 of Assignment 2 ("find one real job posting you could apply to in 6–12 months"). I did it for real: I want remote part-time, consulting, or educational-material work with a company whose tools I already teach, and Figma is that company. This page shows the posting I chose, the three requirements I will be measured against, and how I found it.
+
+**Why read it.** Because the point of the assignment is not the job — it is the honesty. Students tend to pick a posting that flatters them. This example picks one that exposes a real gap (I have never shipped a design system in Figma), documents a real disappointment (Figma has no part-time or consulting roles at all), and shows a machine ranking 55 postings *and then a human overriding it*. That override is what Part 2 and the rest of the course are about.
+
+**The answer.** **Designer Advocate, Figma** — full-time, US hubs, $153K–$317K, posted September 1, 2026. The job is making written, visual, and video teaching material for the design community, which is what I already do; the gap is hands-on Figma design-systems depth, which the Madison project will close. Runner-up: Researcher, Figma Agentic Experiences (the one remote-OK role that reads like my Computational Skepticism course, but wants 7+ years of UX research).
+
+**Student:** Nik Bear Brown · **Board:** Figma (Greenhouse) · **Checked:** 2026-09-19 · **Part 1 of 4** · 10 pts
+
+---
 
 ## How I found it (method, so you can repeat it)
 

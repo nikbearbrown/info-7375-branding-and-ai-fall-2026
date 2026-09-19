@@ -10,3 +10,4 @@ Never invent interviews, audience feedback, results, testimonials, consent, appr
 
 Run python3 scripts/validate_course.py. course-layer-manifest.json identifies the conversion files. Preserve existing content when publishing; do not push unrelated source or historical student material without authorization.
 
+Every human-facing Markdown file — assignment, worked example, lesson, report, README — opens with an `## Executive summary` that answers, in plain language and before any technical detail: what is this document, why should I read it, and what did it find or decide. Write it for a reader who has never seen the repository.
