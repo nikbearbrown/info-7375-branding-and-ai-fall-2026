@@ -96,6 +96,7 @@ here; no tool in this pipeline scrapes LinkedIn.**
 | `evidence/greenhouse-watch-figma-report.md` | the human report: 49 relevant / 103 skipped, with a justification line per rule hit |
 | `evidence/greenhouse-watch-figma-run.json` | the machine record of the same run |
 | `evidence/scheme.bear-figma.json` | the matching rules I wrote; the comment explains each change from the default |
+| `evidence/figma-advocate-roles.md` | the narrowed list — only Figma's three Designer Advocate postings and their enablement neighbours, with keep / consider / pass |
 
 My résumé JSON is **not** in this folder — it lives in the engine's gitignored
 `search/resume.json`, which is the rule for real résumés. The scheme and the report
