@@ -2,13 +2,26 @@
 
 ## Executive summary
 
-**What ran.** Lectern fetched 13 job boards across three applicant-tracking systems, read **2,347 postings**, and kept **69** whose words are about teaching — education, workshops, curriculum, developer advocacy. Both data files are in this folder: [`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json) (everything found, so anyone can check the filter) and [`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json) (the 69, with the words that matched and the full posting text).
+**What ran.** Lectern fetched **18 job boards across three applicant-tracking systems**, read **3,446 postings**, and kept **88** whose titles or text are about teaching, advocacy, or education. Both data files are in this folder: [`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json) — every posting, kept or rejected, with the reason — and [`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json), the 88 kept with the words that matched and the full text.
 
-**What it found.** The two largest boards are the two newest additions: **OpenAI (830 postings, 17 kept)** and **Anthropic (618, 23 kept)** — between them 40 of the 69. Anthropic is hiring a *Developer Education Lead (Claude Platform)*, a *Lead Technical Instructor*, a *Head of Technical Training*, and a *Full Stack Engineer, Education Labs*. OpenAI has *Tech Lead Manager, Education* and *Account Director, Higher Education*. **Four companies matched nothing** — Vercel, Miro, Airtable, Jasper AI — and all four stay on the watch list.
+**Six roles are both remote and genuinely advocacy** — the actual answer to the question this tool exists to ask:
 
-**The quality number that matters.** 69 of 69 kept records have a title, a URL, and a parseable date, because a record missing any of the three is never written. On the fields that *can* vary — location, department, date — completeness is **2,347 / 2,347 (100%)** across every posting fetched, kept or not. No duplicates were found this run.
+| Company | Role | Where |
+|---|---|---|
+| **GitLab** | Senior Developer Advocate | Remote, Canada **and Remote, United States** |
+| **Supabase** | Developer Relations Engineer (×3) | Remote + SF · Remote + New York · Remote + London |
+| **Webflow** | Senior Developer Educator | U.S. Remote (1 week/month in SF) |
+| **HubSpot** | Academy Professor, French & Portuguese | Remote — Ireland |
 
-**The honest caveat.** 21 of the 69 (30%) matched on their **title alone**, with no supporting topic words in the body. Those are the weakest records in the file and they are flagged `title_only: true` rather than blended in. Several are enablement and community roles that are sales jobs, not teaching jobs.
+**Three findings from widening the list.**
+
+1. **Vercel went from zero to one.** It matched nothing in the morning run and by the afternoon had a *DevRel Engineer, Agentic Infrastructure*. That is the whole argument for P5 — watch the company, not the current opening — proving itself inside one day.
+2. **The two biggest AI labs are hiring educators.** Anthropic: 23 matches, including *Developer Education Lead (Claude Platform)*, *Lead Technical Instructor*, *Head of Technical Training*. OpenAI: 17, including *Tech Lead Manager, Education*.
+3. **One keyword had to be cut for being noise, and the cut is recorded.** `developer experience` was added as an advocacy synonym, fired on 11 postings, and **10 of them were backend or platform software-engineering jobs**. It names an engineering discipline, not a role. Removed in `keywords.json` v0.2.1, along with `advocacy` (1 hit, a customer-marketing programme). `devrel` was kept — it is what found Vercel's role.
+
+**The quality number that matters.** Every kept record has a title, a URL, and a parseable date, because a record missing any of the three is never written. Completeness on the fields that can vary — location, department, date — is **3,446 / 3,446 (100%)** across every posting fetched. No duplicates.
+
+**The honest caveat.** **"Enablement" is the most common matched word by a wide margin — 34 of the 88 — and at Stripe and GitLab it usually means sales enablement, not teaching.** Those records are in the file because the filter is honest about what it matched, not because they are jobs worth reading.
 
 ---
 
@@ -16,74 +29,75 @@
 
 | | |
 |---|---:|
-| Boards requested | 13 |
-| Boards that answered | 13 |
-| Postings fetched | 2,347 |
-| Unique postings | 2,347 |
-| **Kept** | **69** |
-| Rejected | 2,278 |
+| Boards requested | 18 |
+| Boards that answered | 18 |
+| Postings fetched | 3,446 |
+| Unique postings | 3,446 |
+| **Kept** | **88** |
+| Rejected | 3,358 |
 | Duplicates collapsed | 0 |
 
 ### Rejections, by reason
 
 | Reason | Count |
 |---|---:|
-| No keyword match at all | 1,479 |
-| Only 1 topic word, no role word in the title | 756 |
-| Only 2 topic words, no role word in the title | 43 |
+| No keyword match at all | 2,345 |
+| Only 1 topic word, no role word in the title | 950 |
+| Only 2 topic words, no role word in the title | 63 |
 | Missing title / URL / unparseable date | 0 |
 
-The two "only N topic words" rows are the filter's threshold doing its job: the rule keeps a posting on **one role word in the title** or **three or more topic words in the body**, so 799 postings that mentioned teaching once or twice in passing were rejected. That threshold is the single most consequential number in `keywords.json`.
+The rule keeps a posting on **one role word in the title** or **three or more topic words in the body**. That threshold is the most consequential number in `keywords.json`: the two "only N topic words" rows are 1,013 postings that mentioned teaching once or twice in passing.
 
 ## Per board
 
-| Company | Source | Postings | Kept | Note |
-|---|---|---:|---:|---|
-| OpenAI | Ashby | 830 | 17 | Largest board in the set |
-| Anthropic | Greenhouse | 618 | 23 | Most matches of anywhere |
-| Canva | SmartRecruiters | 197 | 10 | Every match is APAC or US sales; several are 6–12 month contracts |
-| Figma | Greenhouse | 163 | 9 | 3 Designer Advocate, 6 Customer Enablement |
-| HubSpot | Greenhouse | 133 | 1 | *Academy Professor, French & Portuguese* — remote Ireland |
-| Notion | Ashby | 128 | 5 | Technical Education Specialist; Developer Advocate |
-| Vercel | Greenhouse | 88 | **0** | Watched anyway (P5) |
-| Replit | Ashby | 75 | 2 | |
-| Writer | Ashby | 51 | 1 | Senior AI learning designer, rapid content |
-| Miro | Greenhouse | 28 | **0** | Watched anyway |
-| Webflow | Greenhouse | 27 | 1 | Senior Developer Educator — still the only US-remote one |
-| Jasper AI | Ashby | 6 | **0** | Watched anyway |
-| Airtable | Greenhouse | 3 | **0** | Watched anyway |
+| Company | Source | Postings | Kept |
+|---|---|---:|---:|
+| OpenAI | ashby | 830 | 17 |
+| Stripe | greenhouse | 702 | 10 |
+| Anthropic | greenhouse | 618 | 23 |
+| GitLab | greenhouse | 199 | 3 |
+| Canva | smartrecruiters | 197 | 10 |
+| Figma | greenhouse | 163 | 9 |
+| Twilio | greenhouse | 138 | **0** |
+| HubSpot | greenhouse | 133 | 1 |
+| Notion | ashby | 128 | 5 |
+| Vercel | greenhouse | 88 | 1 |
+| Replit | ashby | 75 | 2 |
+| Supabase | ashby | 56 | 4 |
+| Writer | ashby | 51 | 1 |
+| Miro | greenhouse | 28 | **0** |
+| Webflow | greenhouse | 27 | 1 |
+| Jasper AI | ashby | 6 | **0** |
+| Netlify | greenhouse | 4 | 1 |
+| Airtable | greenhouse | 3 | **0** |
+
+Boards that matched nothing today — and stay on the watch list (P5): Twilio, Miro, Jasper AI, Airtable.
 
 ## Completeness
 
 | Field | Present | Of |
 |---|---:|---:|
-| title | 2,347 | 2,347 |
-| url | 2,347 | 2,347 |
-| date_posted (parsed to `YYYY-MM-DD`) | 2,347 | 2,347 |
-| location_text | 2,347 | 2,347 |
-| department | 2,347 | 2,347 |
+| title | 3,446 | 3,446 |
+| url | 3,446 | 3,446 |
+| date_posted (parsed to `YYYY-MM-DD`) | 3,446 | 3,446 |
+| location_text | 3,446 | 3,446 |
+| department | 3,446 | 3,446 |
 
-100% on every field this run. That is a fact about these three APIs — they are well-formed — not a claim about Lectern's cleaning, which did nothing because nothing needed it.
-
-## Two findings from this run
-
-**Canva without ad text kept nothing, and the validator caught why.** The first run used `--no-detail` to skip SmartRecruiters' 197 per-posting calls. Its listing records have no `postingUrl`, so **all 197 were rejected as `missing-url`** — mechanically correct and completely useless. Re-fetching with detail (197 calls, about 3½ minutes) produced 10 matches. The lesson is that a source can be present, answer successfully, and contribute nothing for a reason that has nothing to do with relevance.
-
-**`--from-raw` reproduced the output from the saved responses.** Both files in this folder were regenerated by re-filtering `raw/` with no network access, which is the re-derivability criterion from `VERIFICATION.md` passing in practice rather than in principle.
+100% on every field. That is a fact about these three APIs being well-formed, not a claim about Lectern's cleaning, which did nothing because nothing needed it.
 
 ## What this run does not tell you
 
-- **Nothing here says a job is good.** 69 records matched words. The 21 flagged `title_only` are the thinnest, and *enablement* in a title is more often a sales-support role than a teaching one.
-- **The watch list is incomplete and it is not a coverage estimate.** Five companies could not be read at all, four of them Tier 1 education players — Adobe, Salesforce, GitHub, Google. See [`ATS.md`](ATS.md).
-- **This is one day.** Figma had 152 postings on 2026-09-19 and 163 today; Canva had 248 and now 197. These counts are a snapshot, and the point of the state file is that tomorrow's run reports only what changed.
-- **False negatives were not measured.** `VERIFICATION.md` requires reading 20 rejects by hand to classify what the filter missed. That has not been done yet, so no accuracy figure is claimed in either direction.
+- **Nothing here says a job is good.** 88 records matched words. `enablement` alone accounts for 34 of them and is usually a sales function.
+- **The watch list is incomplete.** Five companies from the target list cannot be read at all — Adobe, Salesforce, GitHub, Google, Shopify — and four are Tier 1 education players. Four more named as advocacy employers were also unreachable on all four APIs tried: **Hugging Face, Framer, Sketch, InVision**. See [`ATS.md`](ATS.md).
+- **This is one day.** Figma had 152 postings on 2026-09-19 and 163 today; Canva 248 then, 197 now. The counts are a snapshot.
+- **False negatives are still unmeasured.** `VERIFICATION.md` requires reading 20 rejects by hand to classify what the filter misses. Not done, so no accuracy figure is claimed in either direction.
 
 ## Reproduce it
 
 ```bash
-python3 collect.py                      # fetch all 13 boards, filter, write both files
+python3 collect.py                      # fetch all 18 boards, filter, write both files
 python3 collect.py --from-raw raw/      # no network; re-filter the saved responses
 python3 collect.py --only ashby         # one provider
 ```
 
-`raw/` holds each API response exactly as it arrived — 32 MB for this run, so it is **not committed** (OpenAI's response alone is 14 MB). Re-running `collect.py` recreates it. The two data files in this folder are committed, which is the point: anyone can open `all-jobs-2026-09-26.json`, find a posting Lectern rejected, and disagree.
+`raw/` holds each response exactly as it arrived — about 45 MB for this run, so it is **not committed**. The two data files are, which is the point: open `all-jobs-2026-09-26.json`, find a posting Lectern rejected, and disagree.

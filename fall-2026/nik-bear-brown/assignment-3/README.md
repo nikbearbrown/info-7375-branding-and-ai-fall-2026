@@ -17,7 +17,7 @@ Three steps, once a day:
 
 **What it does not do.** It never applies to anything, never contacts anyone, and makes no judgment about fit — it matches words and hands me a list. Which of these is worth a day of my life stays my decision.
 
-**Status: built and run once, 2026-09-26.** [`collect.py`](collect.py) works. It read **13 boards, 2,347 postings, and kept 69**. Both data files are here so anyone can check the filter:
+**Status: built and run once, 2026-09-26.** [`collect.py`](collect.py) works. It read **18 boards, 3,446 postings, and kept 88**. Both data files are here so anyone can check the filter:
 
 - **[`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json)** · [`.csv`](all-jobs-2026-09-26.csv) — every posting found, kept or rejected, with the reject reason. Ad text omitted for size.
 - **[`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json)** · [`.csv`](jobs-of-interest-2026-09-26.csv) — the 69 kept, with the words that matched, where they matched, and the full posting text.
@@ -51,8 +51,8 @@ Scored against the live brief. **Nothing is checked off yet** — this is the ta
 | **At least 3 different data sources** | **Greenhouse API · Ashby API · SmartRecruiters API** — three services, three JSON shapes, three normalisers | ☑ |
 | Saves in an organized format | `.json` and `.csv` for both files, plus the dated raw responses in `raw/` | ☑ |
 | Runs on my computer and is repeatable | `python3 collect.py`; `--from-raw` re-filters with no network and reproduced both files | ☑ |
-| 50–300 clean, relevant records | **69 kept** from 2,347 — in the "good enough for full credit" band (50–100). More boards would reach "strong" | ☑ |
-| Workflow runs without major errors (15) | 13 of 13 boards answered; a dead source is isolated per source | ☑ |
+| 50–300 clean, relevant records | **88 kept** from 3,446 — the top of the "good enough" band and nearly "strong work" (100–200) | ☑ |
+| Workflow runs without major errors (15) | 18 of 18 boards answered; a dead source is isolated per source | ☑ |
 | Data relevant to the problem (15) | Every kept record names the words that matched and the field they matched in | ☑ |
 | Usable, organized format (10) | Same columns every row, dates `YYYY-MM-DD` with the original string kept, source named per record | ☑ |
 
@@ -72,7 +72,7 @@ Scored against the live brief. **Nothing is checked off yet** — this is the ta
 | Essential info in every record (8) | title, date, source enforced at write time | ☐ |
 | Duplicates removed | Collapse on source + posting id | ☐ |
 | Consistent dates | All three sources' dates converted to `YYYY-MM-DD`; the original string kept alongside | ☐ |
-| Quality numbers documented | [`quality-report-2026-09-26.md`](quality-report-2026-09-26.md) — script-counted: 2,347 fetched, 69 kept, rejects by reason, 0 duplicates, 100% completeness | ☑ |
+| Quality numbers documented | [`quality-report-2026-09-26.md`](quality-report-2026-09-26.md) — script-counted: 3,446 fetched, 88 kept, rejects by reason, 0 duplicates, 100% completeness | ☑ |
 
 ### Excellence (20 pts, comparative)
 
@@ -99,14 +99,16 @@ Scored against the live brief. **Nothing is checked off yet** — this is the ta
 
 [`sources.json`](sources.json) — 13 boards across the three systems, probed 2026-09-26. [`ATS.md`](ATS.md) — which system each company uses, and a plain "unknown" for the five where it has not been verified.
 
-**Every company is checked on every run whether or not it has a matching role today.** Vercel, Miro, Airtable, and Jasper AI matched nothing and stay on the list: the first day one of them posts an AI-curriculum role is the day a pruned list would have stopped looking.
+**Every company is checked on every run whether or not it has a matching role today** — and that rule paid off within hours. **Vercel matched nothing in the morning run and had a *DevRel Engineer, Agentic Infrastructure* by the afternoon.** Miro, Airtable, and Jasper AI still match nothing and stay on the list.
 
 | Source | Boards | Postings | Kept |
 |---|---|---:|---:|
-| Greenhouse | Anthropic, Figma, HubSpot (`hubspotjobs`), Vercel, Webflow, Miro (`realtimeboardglobal`), Airtable | 1,060 | 34 |
-| Ashby | OpenAI, Notion, Replit, Writer, Jasper AI | 1,090 | 25 |
+| Greenhouse | Anthropic, **Stripe**, **GitLab**, Figma, **Twilio**, HubSpot (`hubspotjobs`), Vercel, Miro (`realtimeboardglobal`), Webflow, **Netlify**, Airtable | 2,075 | 49 |
+| Ashby | OpenAI, Notion, Replit, **Supabase**, Writer, Jasper AI | 1,146 | 29 |
 | SmartRecruiters | Canva | 197 | 10 |
-| **Total** | **13** | **2,347** | **69** |
+| **Total** | **18** | **3,446** | **88** |
+
+**Six of the 88 are both remote and genuinely advocacy** — the answer to the question the tool exists to ask: **GitLab Senior Developer Advocate** (Remote US), **Supabase Developer Relations Engineer ×3** (Remote SF / NY / London), **Webflow Senior Developer Educator** (US Remote), **HubSpot Academy Professor** (Remote Ireland).
 
 **That clears the 50-record floor without loosening a single keyword** — the prediction said widening the company list would do it, and it did. The biggest boards are the newest additions: **OpenAI 830** and **Anthropic 618**, which between them supply 40 of the 69.
 

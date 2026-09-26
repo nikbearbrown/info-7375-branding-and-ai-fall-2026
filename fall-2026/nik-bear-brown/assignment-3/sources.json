@@ -1,5 +1,5 @@
 {
-  "_comment": "Lectern's watch list. Every company here is checked on every run REGARDLESS of whether it has an education, education-advocate, or AI-advocate role today. Professor Bear's rule, 2026-09-26: 'AI grows so fast that the agent should check the company regardless if they have explicit educational roles or educational advocate roles or AI advocate roles. Because it's likely these companies are going to create those roles if they don't have them now. So the agent should check.' A company with zero matches is a company being watched, not a company to drop. Counts below are from the 2026-09-26 probe and are a snapshot, not a contract. Companies under 'unreachable' have no ATS recorded: the probe found no board on the three APIs Lectern reads, and the ATS they actually use has not been verified. Nothing is guessed — see ATS.md.",
+  "_comment": "Lectern's watch list. Every company here is checked on every run REGARDLESS of whether it has an education, education-advocate, or AI-advocate role today. Professor Bear's rule, 2026-09-26: 'AI grows so fast that the agent should check the company regardless if they have explicit educational roles or educational advocate roles or AI advocate roles. Because it's likely these companies are going to create those roles if they don't have them now. So the agent should check.' A company with zero matches is a company being watched, not a company to drop. Counts below are from the 2026-09-26 probe and are a snapshot, not a contract. Companies under 'unreachable' have no ATS recorded: the probe found no board on the three APIs Lectern reads, and the ATS they actually use has not been verified. Nothing is guessed — see ATS.md. 2026-09-26 (second pass): added Stripe, GitLab, Twilio, Netlify (Greenhouse) and Supabase (Ashby) from Professor Bear's list of companies that hire designer/developer/creator advocates.",
   "schema_version": "0.1.0",
   "probed": "2026-09-26",
   "sources": [
@@ -63,6 +63,34 @@
           "postings_2026_09_26": 3,
           "matched_2026_09_26": 0,
           "why_watched": "Plausible for school and district ops tooling, nothing classroom-facing yet. A three-posting board — cheap to watch."
+        },
+        {
+          "company": "Stripe",
+          "slug": "stripe",
+          "tier": 1,
+          "postings_2026_09_26": 702,
+          "why_watched": "A pioneer of the DevRel model — technical advocates who write documentation, build sample apps, and speak at conferences. Second-largest board on the list."
+        },
+        {
+          "company": "GitLab",
+          "slug": "gitlab",
+          "tier": 1,
+          "postings_2026_09_26": 199,
+          "why_watched": "Developer advocates for open-source contributors and enterprise engineering teams; a large, long-running advocacy function."
+        },
+        {
+          "company": "Twilio",
+          "slug": "twilio",
+          "tier": 1,
+          "postings_2026_09_26": 138,
+          "why_watched": "With Stripe, the company that defined developer relations as a discipline."
+        },
+        {
+          "company": "Netlify",
+          "slug": "netlify",
+          "tier": 2,
+          "postings_2026_09_26": 4,
+          "why_watched": "Known for developer experience and advocacy around modern frontend. A four-posting board today — cheap to watch, and small boards move fast."
         }
       ]
     },
@@ -111,6 +139,13 @@
           "postings_2026_09_26": 6,
           "matched_2026_09_26": 0,
           "why_watched": "A small and contracting board. Watched cheaply; may not survive."
+        },
+        {
+          "company": "Supabase",
+          "slug": "supabase",
+          "tier": 2,
+          "postings_2026_09_26": 56,
+          "why_watched": "Backend-as-a-service that runs on advocacy — tutorials, sample templates, an active Discord and GitHub community."
         }
       ]
     },
