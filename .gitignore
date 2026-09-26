@@ -27,6 +27,8 @@
 !/fall-2026/
 /fall-2026/*
 !/fall-2026/README.md
+# Professor Bear's own example folder is public; student folders stay untracked.
+!/fall-2026/nik-bear-brown/
 !/youtube/
 /youtube/*
 !/youtube/README.md
