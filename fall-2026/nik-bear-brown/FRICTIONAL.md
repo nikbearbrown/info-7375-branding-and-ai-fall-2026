@@ -65,6 +65,22 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 
 - **Evidence and next step:** `figma/`, `facts/`, `greenhouse-watch-demo/`, `assignment-2/`, `advocate/`, and `assignment-3/` with its four records, in this folder; the README's recipe and mapping table. Next: pick one of the two Figma postings, then the Assignment 3 creative brief and `tokens.json`.
 
+### 2026-09-26 — This folder stopped being a place to edit shared code
+
+- **Date and what I was working on:** Keeping one live-coded project consistent across three classes.
+
+- **I tried / expected:** I expected the three `nik-bear-brown` folders to be roughly the same.
+
+- **What happened:** They had drifted. Branding had the collector, the watch list, the filter, and the ATS notes; Prompt Engineering had the CV facts and the earlier iterations but not the collector; Computational Skepticism had neither. I named **Computational Skepticism the canonical master**, which meant the master was the folder furthest behind at the moment it was declared.
+
+- **What I did:** The shared spine now lives in the master and is copied here by its `lectern/sync.sh`. This folder gained a `SYNC.md` saying it is **not** the master, and a Rule 0 in `CLAUDE.md` saying the same. The files that are copies are named there. Everything specific to this class — this log, the README, the assignment folders, the dated run outputs — is never copied in either direction, because a log overwritten by another class's log is a destroyed record.
+
+- **What Claude or another person contributed:** Claude Code (Opus 5) inventoried and diffed the three folders, built the sync script, and wrote the notes. I decided which class is master.
+
+- **What I understand now / still do not understand:** Drift is invisible until something diffs it. Still open: the recovery path — a shared file edited in the wrong repo — has not been exercised.
+
+- **Evidence and next step:** `SYNC.md` here, and `./lectern/sync.sh --check` in the master reporting all three in sync.
+
 ---
 
 ## GitHub pushes
@@ -79,3 +95,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-09-26 | feat(fall-2026): rewrite assignment-3 for the live data-pipeline brief and add the Lectern SDD |
 | 2026-09-26 | feat(fall-2026): build Lectern, watch 13 boards across 3 ATSs, publish all 2347 postings and the 69 kept |
 | 2026-09-26 | feat(fall-2026): add the advocacy-title companies, cut a keyword that measured as noise |
+| 2026-09-26 | docs(fall-2026): note that shared code is canonical in the Computational Skepticism folder |
