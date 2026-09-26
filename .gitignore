@@ -20,15 +20,13 @@
 !/assignments/
 /assignments/*
 !/assignments/fall-2026/
-# Instructor's worked examples (public — no résumé data, only public-CV skill strings)
-!/assignments/nik-bear-brown/
-# …but nested repos inside it are their own GitHub projects, linked from its README, never embedded
-/assignments/nik-bear-brown/brutalist-figma-claude/
 !/fall-2026/
 /fall-2026/*
 !/fall-2026/README.md
 # Professor Bear's own example folder is public; student folders stay untracked.
 !/fall-2026/nik-bear-brown/
+# …but the Figma API book inside it is its own GitHub project, linked, never embedded
+/fall-2026/nik-bear-brown/brutalist-figma-claude/
 !/youtube/
 /youtube/*
 !/youtube/README.md

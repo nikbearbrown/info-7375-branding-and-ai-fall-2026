@@ -46,9 +46,16 @@ Every push that touches this folder adds a row to the `## GitHub pushes` table, 
 
 Every Markdown file here opens with what it is, why to read it, and what it found, before any table or technical detail. That is the repo-wide rule in `AGENTS.md`; it applies to the brief, the rationale, and this folder's READMEs.
 
+## Rule 5 — every value is labeled, and every JSON file is readable
+
+- **Labels.** Every value in this folder is **record** (from a saved file or the CV facts), **judgment** (someone read the records and decided), or **your input** (only Professor Bear can supply it). Anything not built yet is a typed `[TODO: …]`. Never present a judgment as a record.
+- **Readable JSON.** Students must be able to open any file on GitHub and check it, so **every JSON file here is indented** (2 spaces, UTF-8 kept as written, one trailing newline), never minified. Reformat downloads and API responses before committing: parse, write back indented, confirm the parsed data is identical. Only whitespace changes, never the data. Where a file is evidence of what a server sent, its README says it was indented for reading and the data is unchanged.
+- **Saved boards and run output are evidence.** Files under `figma/`, `greenhouse-watch-demo/snapshots/`, `runs/`, and `whole-board/` are what the server returned and what the tool wrote. Never hand-edit them; re-run instead, and keep both dates.
+- **The facts file is attested.** `facts/professor-bear-cv.json` carries `attested: true` with the date Professor Bear checked it. Any change to it needs his word and a new date, and it is logged.
+
 ## Pushing from this folder
 
-- **Each push needs Professor Bear's word.** He asked for this folder on 2026-09-26 for a live class demo. There is no standing approval for this folder yet.
+- **Approval (given by Professor Bear, 2026-09-26, during a live class demo):** *"When you have something to push to the branding and AI folder, push it."* Push substantive work to `main` without asking again, once the log is updated and the validator passes. This covers **only** `fall-2026/nik-bear-brown/`; anything outside it still needs his word for each push.
 - Git on his machine is already authenticated. Never ask for, accept, or write down a GitHub token.
 - Stage **only** `fall-2026/nik-bear-brown/` (and the one `.gitignore` line that tracks it). The repo often has other uncommitted instructor edits; never sweep them in.
 - Run `python3 scripts/validate_course.py` from the repo root before committing.

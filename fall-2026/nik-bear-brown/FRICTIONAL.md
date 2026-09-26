@@ -6,7 +6,7 @@
 
 **Why read it.** It is a real example of the log, not a constructed one. It shows the instructor's own work run through the same record students keep, including the parts that did not go smoothly.
 
-**What it records so far.** One session, 2026-09-26: setting this folder up for a live class demo. The Assignment 3 work itself has not started — the folder is a place to work, not a result yet. The session's finding was about the repository, not the assignment: the instructor's earlier Assignment 2 work was in the wrong place (`assignments/nik-bear-brown/`), and `fall-2026/` was blocked by a `.gitignore` rule, so nothing put there would ever have reached GitHub.
+**What it records so far.** One session, 2026-09-26, during a live class demo: setting this folder up, bringing the Figma dream-job recipe over from the Prompt Engineering class, and consolidating everything of the instructor's into this one folder. No Assignment 3 work has started yet — that folder is a place to work, not a result. Two findings were about the repository rather than the assignment: `fall-2026/` was blocked by a `.gitignore` rule, so anything put there would have pushed nothing with no error; and the instructor's work existed in two places at once, which is not how the other two classes are laid out.
 
 Every push to GitHub is listed at the bottom with its date and commit note.
 
@@ -39,6 +39,30 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 
 - **Evidence and next step:** This folder — `README.md`, `CLAUDE.md`, `assignment-3/` — and the `.gitignore` line that tracks it. Last week's evidence is in `assignments/nik-bear-brown/assignment-2/evidence/` and the engine's `reports/greenhouse-watch/`. Next: the Assignment 3 creative brief and `tokens.json`, built live.
 
+### 2026-09-26 (same session, continued) — Bringing the Figma recipe over from Prompt Engineering, and one folder instead of two
+
+- **Date and what I was working on:** After the first push went live, moving the Figma dream-job work into this class and fixing the folder layout.
+
+- **I tried / expected:** I said: *"copy [the Prompt Engineering fall-2026/nik-bear-brown folder]. We're going to build on the Figma from the other. That's also being done in other class. So it took it the look at this particular folder here and copy it over to branding and AI."* And, so the class could watch: *"When you have something to push to the branding and AI folder, push it. I want to show it while you are working on other things."*
+
+- **What happened:**
+  - **The recipe was written in the wrong class.** The Prompt Engineering folder holds an eight-step dream-job recipe whose steps are explicitly mapped onto **Assignment 2, "Plan Your Madison Project Like a Pro"** — which is *this* course's assignment, not that one's. Copying it here puts it where it is graded.
+  - **The two folders disagree about which posting to pick.** The recipe suggests **Designer Advocate, Partnerships** (the only Figma role that builds certification and enablement programs and appears at workshops). Last week's write-up picked the **Designer Advocate** US-hubs posting and kept Partnerships as "consider." Both judgments are defensible. The disagreement is now stated in the README instead of one quietly overwriting the other; I have not picked yet.
+  - **I thought the folder name was wrong.** I said: *"Looks like you misspelled my name… Look at how it's spelled. And the other directories… you also missed it for twenty twenty-six as fall two two six. Look at the other directories for the proper naming… The same thing is being done both in the computational skepticism class and in the prompt engineering class."* Checked against GitHub: the live folder is `fall-2026/nik-bear-brown/`, character for character the same as the other two repos. The spelling and the year were right.
+  - **What was actually wrong was that there were two of them.** This repo had `assignments/nik-bear-brown/` *and* `fall-2026/nik-bear-brown/`. Neither of the other two classes has an `assignments/<name>/` folder at all. Two folders with my name is what I was looking at.
+
+- **What I did:**
+  - Copied `figma/`, `facts/`, and `greenhouse-watch-demo/` from the Prompt Engineering folder into this one, unchanged.
+  - Rewrote this folder's README around the eight-step recipe, with Assignment 2's four parts mapped to the steps that feed them, and the two candidate picks side by side.
+  - Added the Prompt Engineering folder's standing rules to `CLAUDE.md`: every value labeled record / judgment / your input, every JSON file indented so students can read it on GitHub, saved boards and run output never hand-edited, and the facts file attested with a date.
+  - **Moved `assignment-2/` and `advocate/` here with `git mv`**, moved the Figma book repo with them, deleted the old `assignments/nik-bear-brown/`, and rewrote every link that pointed at the old location. One folder now, like the other two classes.
+
+- **What Claude or another person contributed:** Claude Code did the copy, the README rewrite, the move, and the link fixes, and checked the live GitHub tree to establish that the folder name was already correct rather than agreeing with me. I gave the direction: copy the Prompt Engineering folder, push as you go, and make the naming match the other classes.
+
+- **What I understand now / still do not understand:** The naming was fine; the duplication was the bug, and it was mine — last week's work went into `assignments/` before this folder existed. Resolved: everything of mine is in `fall-2026/nik-bear-brown/`. Still open: which of the two Figma postings is the submission's dream job, the "why this role" sentence, and whether the six-company sweep gets refolded into this folder's per-company shape.
+
+- **Evidence and next step:** `figma/`, `facts/`, `greenhouse-watch-demo/`, `assignment-2/`, `advocate/` in this folder; the README's recipe and mapping table. Next: pick one posting, then the Assignment 3 creative brief and `tokens.json`.
+
 ---
 
 ## GitHub pushes
@@ -48,3 +72,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | Date | GitHub note |
 |---|---|
 | 2026-09-26 | feat(fall-2026): add Professor Bear's folder with Frictional log and assignment-3 |
+| 2026-09-26 | feat(fall-2026): bring the Figma dream-job recipe into this class and put all my work in one folder |

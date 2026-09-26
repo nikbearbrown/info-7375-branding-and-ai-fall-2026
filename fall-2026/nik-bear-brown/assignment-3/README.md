@@ -38,4 +38,4 @@ Rubric: 60 implementation + 10 Frictional + 10 GitHub posting + 20 relative quar
 
 ## The honest note about scope
 
-The Figma posting asks for design systems *in Figma*, with tokens and Dev Mode handoff. This assignment produces tokens and an SVG specimen from Python — adjacent, not the same thing. It is a real step toward the gap, not a claim to have closed it. Where the gap actually gets closed is the Figma API book in `assignments/nik-bear-brown/brutalist-figma-claude/`, and that is a separate, longer piece of work.
+The Figma posting asks for design systems *in Figma*, with tokens and Dev Mode handoff. This assignment produces tokens and an SVG specimen from Python — adjacent, not the same thing. It is a real step toward the gap, not a claim to have closed it. Where the gap actually gets closed is the Figma API book in `brutalist-figma-claude/`, and that is a separate, longer piece of work.
