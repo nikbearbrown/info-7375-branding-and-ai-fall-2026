@@ -34,7 +34,18 @@ Rubric: 60 implementation + 10 Frictional + 10 GitHub posting + 20 relative quar
 | `specimen.svg` | The rendered identity specimen | not started |
 | `test_generate_specimen.py` | The failure cases: malformed hex, zero and negative sizes, a missing required token | not started |
 | `rationale.md` | The two directions compared, which was chosen, and why — on audience and strategy grounds, not taste | not started |
-| `verification.md` | What was inspected by eye, what was tested, what the accessibility checks did and did not cover | not started |
+| `verification.md` | superseded by [`VERIFICATION.md`](VERIFICATION.md) below | — |
+
+## The standard submission files
+
+The course asks every submission to carry the same four records, from [`templates/`](../../../templates/). They are written in this order on purpose: the prediction and the acceptance criteria are fixed *before* there is any output to be impressed by.
+
+| File | What it holds | Status |
+|---|---|---|
+| [`PREDICTIONS.md`](PREDICTIONS.md) | The expectation and its measurable failure condition, dated before the first render | written, not yet reviewed |
+| [`VERIFICATION.md`](VERIFICATION.md) | The acceptance criteria fixed in advance, and the checks as actually run | criteria written; nothing verified |
+| [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md) | What the human did, what Claude did, what is still unreviewed | current |
+| [`FRICTIONAL.md`](FRICTIONAL.md) | This assignment's process log (the folder-level one is [`../FRICTIONAL.md`](../FRICTIONAL.md)) | current |
 
 ## The honest note about scope
 

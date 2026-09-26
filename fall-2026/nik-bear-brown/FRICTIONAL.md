@@ -61,7 +61,9 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 
 - **What I understand now / still do not understand:** The naming was fine; the duplication was the bug, and it was mine — last week's work went into `assignments/` before this folder existed. Resolved: everything of mine is in `fall-2026/nik-bear-brown/`. Still open: which of the two Figma postings is the submission's dream job, the "why this role" sentence, and whether the six-company sweep gets refolded into this folder's per-company shape.
 
-- **Evidence and next step:** `figma/`, `facts/`, `greenhouse-watch-demo/`, `assignment-2/`, `advocate/` in this folder; the README's recipe and mapping table. Next: pick one posting, then the Assignment 3 creative brief and `tokens.json`.
+- **Also in this session — the standard submission files.** I asked for *"all of the standard readmes and frictional logs, the other ones have in that as well."* The course's own brief names them, and `templates/` holds blanks for them, so `assignment-3/` now carries `PREDICTIONS.md`, `VERIFICATION.md`, `CONTRIBUTIONS.md`, and its own `FRICTIONAL.md` alongside the README. The prediction (a contrast failure at the smallest caption size on a mid-tone background) and the acceptance criteria are both written **before** anything has been rendered, which is the order the assignment is actually testing. A copied blank template is not evidence, so each one is filled in with what is true today — including "not run yet" where that is the truth. I have not reviewed the drafted prediction.
+
+- **Evidence and next step:** `figma/`, `facts/`, `greenhouse-watch-demo/`, `assignment-2/`, `advocate/`, and `assignment-3/` with its four records, in this folder; the README's recipe and mapping table. Next: pick one of the two Figma postings, then the Assignment 3 creative brief and `tokens.json`.
 
 ---
 
@@ -73,3 +75,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 |---|---|
 | 2026-09-26 | feat(fall-2026): add Professor Bear's folder with Frictional log and assignment-3 |
 | 2026-09-26 | feat(fall-2026): bring the Figma dream-job recipe into this class and put all my work in one folder |
+| 2026-09-26 | feat(fall-2026): add the standard submission records to assignment-3 (predictions and acceptance criteria before any output) |
