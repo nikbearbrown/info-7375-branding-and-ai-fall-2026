@@ -1,0 +1,12 @@
+{
+  "_comment": "Lectern's filter. A posting is KEPT if any role_title word appears in its title, or if three or more topic_text words appear in its body. flex_text never causes a keep — it only annotates a kept record, because 'part-time' on its own has nothing to do with teaching. Every kept record records which words matched and where, so a reader can apply this file by hand to one posting and get the same answer.",
+  "version": "0.1.0",
+  "keep_rule": { "role_title_min": 1, "topic_text_min_if_no_title_match": 3 },
+  "role_title": ["advocate", "educator", "education", "enablement", "evangelist", "developer relations", "community", "instructor", "trainer", "curriculum", "teaching", "academy", "learning designer", "developer education"],
+  "topic_text": ["university", "universities", "campus", "student", "workshop", "curriculum", "educate", "education", "teach", "classroom", "k-12", "higher ed"],
+  "flex_text": ["part-time", "part time", "contract role", "contract position", "contractor role", "temporary", "seasonal", "fixed-term", "fixed term", "freelance", "summer", "hourly"],
+  "ignore_words_by_company": {
+    "_comment": "Words that appear in (nearly) every posting on that board — company boilerplate, not a signal. Measured, not guessed. Writer, 2026-09-19: these three appeared in 51 of 51 postings and alone pushed every job over the line.",
+    "Writer": ["generative ai", "ai agents", "learning"]
+  }
+}

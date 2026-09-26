@@ -17,7 +17,13 @@ Three steps, once a day:
 
 **What it does not do.** It never applies to anything, never contacts anyone, and makes no judgment about fit — it matches words and hands me a list. Which of these is worth a day of my life stays my decision.
 
-**Status: not built.** The folder holds the plan, the prediction ([`PREDICTIONS.md`](PREDICTIONS.md)) and the acceptance criteria ([`VERIFICATION.md`](VERIFICATION.md)), all written before any output exists. What *does* exist is the working parts this is assembled from: `greenhouse-watch` in the Reallocation Engine already reads all three ATSs, and [`../figma/find_roles.py`](../figma/find_roles.py) already runs the keyword scan on a saved Figma board.
+**Status: built and run once, 2026-09-26.** [`collect.py`](collect.py) works. It read **13 boards, 2,347 postings, and kept 69**. Both data files are here so anyone can check the filter:
+
+- **[`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json)** · [`.csv`](all-jobs-2026-09-26.csv) — every posting found, kept or rejected, with the reject reason. Ad text omitted for size.
+- **[`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json)** · [`.csv`](jobs-of-interest-2026-09-26.csv) — the 69 kept, with the words that matched, where they matched, and the full posting text.
+- **[`quality-report-2026-09-26.md`](quality-report-2026-09-26.md)** — counts, rejects by reason, completeness, and what the run does not tell you.
+
+The prediction ([`PREDICTIONS.md`](PREDICTIONS.md)) and acceptance criteria ([`VERIFICATION.md`](VERIFICATION.md)) were written before any of it ran, and the prediction was right: widening the company list, not loosening the keywords, is what cleared the record floor.
 
 ---
 
@@ -41,14 +47,14 @@ Scored against the live brief. **Nothing is checked off yet** — this is the ta
 
 | Requirement | Plan | Done |
 |---|---|---|
-| Collects data that directly addresses the Assignment 2 problem | Job postings from the companies whose tools I teach, filtered to advocate/education roles — the exact question Assignment 2 asked | ☐ |
-| **At least 3 different data sources** | **Greenhouse API · Ashby API · SmartRecruiters API** — three separate services, three different JSON shapes, three normalisers. *See the note below.* | ☐ |
-| Saves in an organized format | `jobs-of-interest.csv` (spreadsheet) and `jobs-of-interest.json` (data file), plus the dated raw responses | ☐ |
-| Runs on my computer and is repeatable | One command; a state file makes the second run report only what is new | ☐ |
-| 50–300 clean, relevant records | Target **150–300** — reached by widening the company list, not by loosening the filter | ☐ |
-| Workflow runs without major errors (15) | A dead source logs "unavailable" and the run continues | ☐ |
-| Data relevant to the problem (15) | Every kept record carries the words that matched, so relevance is checkable rather than asserted | ☐ |
-| Usable, organized format (10) | Same columns in every row, dates as `YYYY-MM-DD`, source named per record | ☐ |
+| Collects data that directly addresses the Assignment 2 problem | Job postings from the companies whose tools I teach and whose AI I teach with, filtered to advocate/education roles | ☑ |
+| **At least 3 different data sources** | **Greenhouse API · Ashby API · SmartRecruiters API** — three services, three JSON shapes, three normalisers | ☑ |
+| Saves in an organized format | `.json` and `.csv` for both files, plus the dated raw responses in `raw/` | ☑ |
+| Runs on my computer and is repeatable | `python3 collect.py`; `--from-raw` re-filters with no network and reproduced both files | ☑ |
+| 50–300 clean, relevant records | **69 kept** from 2,347 — in the "good enough for full credit" band (50–100). More boards would reach "strong" | ☑ |
+| Workflow runs without major errors (15) | 13 of 13 boards answered; a dead source is isolated per source | ☑ |
+| Data relevant to the problem (15) | Every kept record names the words that matched and the field they matched in | ☑ |
+| Usable, organized format (10) | Same columns every row, dates `YYYY-MM-DD` with the original string kept, source named per record | ☑ |
 
 ### Part 2 — Data documentation & demo (24 pts)
 
@@ -66,7 +72,7 @@ Scored against the live brief. **Nothing is checked off yet** — this is the ta
 | Essential info in every record (8) | title, date, source enforced at write time | ☐ |
 | Duplicates removed | Collapse on source + posting id | ☐ |
 | Consistent dates | All three sources' dates converted to `YYYY-MM-DD`; the original string kept alongside | ☐ |
-| Quality numbers documented | Counted by the script, not by hand: fetched, kept, rejected and why, duplicates collapsed, per-field completeness | ☐ |
+| Quality numbers documented | [`quality-report-2026-09-26.md`](quality-report-2026-09-26.md) — script-counted: 2,347 fetched, 69 kept, rejects by reason, 0 duplicates, 100% completeness | ☑ |
 
 ### Excellence (20 pts, comparative)
 
@@ -88,6 +94,25 @@ Scored against the live brief. **Nothing is checked off yet** — this is the ta
 | Documentation PDF | inventory + setup + quality numbers | ☐ |
 | Data file | `jobs-of-interest.csv` | ☐ |
 | Demo | screenshot walkthrough PDF | ☐ |
+
+## The watch list
+
+[`sources.json`](sources.json) — 13 boards across the three systems, probed 2026-09-26. [`ATS.md`](ATS.md) — which system each company uses, and a plain "unknown" for the five where it has not been verified.
+
+**Every company is checked on every run whether or not it has a matching role today.** Vercel, Miro, Airtable, and Jasper AI matched nothing and stay on the list: the first day one of them posts an AI-curriculum role is the day a pruned list would have stopped looking.
+
+| Source | Boards | Postings | Kept |
+|---|---|---:|---:|
+| Greenhouse | Anthropic, Figma, HubSpot (`hubspotjobs`), Vercel, Webflow, Miro (`realtimeboardglobal`), Airtable | 1,060 | 34 |
+| Ashby | OpenAI, Notion, Replit, Writer, Jasper AI | 1,090 | 25 |
+| SmartRecruiters | Canva | 197 | 10 |
+| **Total** | **13** | **2,347** | **69** |
+
+**That clears the 50-record floor without loosening a single keyword** — the prediction said widening the company list would do it, and it did. The biggest boards are the newest additions: **OpenAI 830** and **Anthropic 618**, which between them supply 40 of the 69.
+
+**What Anthropic and OpenAI are actually hiring for** is the finding that matters beyond the assignment: *Developer Education Lead (Claude Platform)*, *Lead Technical Instructor*, *Head of Technical Training*, *Full Stack Engineer (Education Labs)* at Anthropic; *Tech Lead Manager, Education*, *Account Director, Higher Education*, *Full-Stack Engineer, ChatGPT Education & Learning* at OpenAI.
+
+**Five companies cannot be read at all, and four are Tier 1** — Adobe, Salesforce, GitHub, Google (plus Shopify). No board on any of the three APIs under any slug tried, and I have not verified what they use instead, so `ATS.md` says *unknown* rather than naming a system. That gap is risk R9 in the SDD.
 
 ## On "three data sources" — the thing worth deciding
 
@@ -112,12 +137,13 @@ That is 643 postings across three sources, of which the advocate/education filte
 
 | File | What it will be | Status |
 |---|---|---|
-| `collect.py` | Fetch → filter → write, one command, three sources | not started |
-| `sources.json` | The company list per ATS, so adding a board is a data change not a code change | not started |
-| `keywords.json` | Role, topic, and flexible-terms word lists, in one editable place | not started |
-| `raw/<source>-<company>-<date>.json` | Each response exactly as the API sent it | not started |
-| `jobs-of-interest.json` · `.csv` | The kept records, source field names preserved | not started |
-| `quality-report.md` | Counts the script wrote: fetched, kept, rejected by reason, duplicates, completeness | not started |
+| [`collect.py`](collect.py) | Fetch → normalise → filter → dedupe → validate → write, one command, three sources | **done** |
+| [`sources.json`](sources.json) | The watch list per ATS — adding a board is a data change, not a code change | **done** |
+| [`keywords.json`](keywords.json) | Role, topic, and flexible-terms lists, plus per-company boilerplate to ignore | **done** |
+| `raw/<provider>-<slug>-<date>.json` | Each response exactly as the API sent it. 32 MB/run, so **local only** — regenerate with `collect.py` | **done, not committed** |
+| [`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json) · [`.csv`](all-jobs-2026-09-26.csv) | **Every** posting found, with kept/rejected and the reason | **done** |
+| [`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json) · [`.csv`](jobs-of-interest-2026-09-26.csv) | The 69 kept, with matched words and full text | **done** |
+| [`quality-report-2026-09-26.md`](quality-report-2026-09-26.md) | Counts, rejects by reason, completeness, limits | **done** |
 | `DATA-INVENTORY.md` | The brief's inventory template, filled from real counts | not started |
 | `SETUP.md` | Install, run, common errors | not started |
 | `workflow.json` | The n8n export: Schedule → 3× HTTP Request → Code (filter) → Write File | not started |

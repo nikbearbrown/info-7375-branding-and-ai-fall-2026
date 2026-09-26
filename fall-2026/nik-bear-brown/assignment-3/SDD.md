@@ -31,6 +31,7 @@ One command, three sources, six steps: download → normalise → filter → ded
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-09-26 | First compile. Sections 1–16 drafted in silent mode from the 2026-09-19 three-ATS sweep and the Assignment 2 gap analysis. |
+| 0.1.1 | 2026-09-26 | Watch list probed and written to `sources.json`: 13 reachable boards, 2,150 postings, 59 matched. Added **P5 — watch the company, not the current opening**. R1 retired to Low; added **R9 — incomplete coverage** (4 Tier 1 companies unreadable). Q1 decided; Q9 opened. `ATS.md` records what was verified and refuses to guess the rest. |
 
 ---
 
@@ -40,7 +41,7 @@ One command, three sources, six steps: download → normalise → filter → ded
 
 **Problem summary.** Lectern is a job-posting collector for a working professor looking for advocate, educator, and workshop work that fits alongside a full-time faculty appointment, that solves *the postings are public but scattered across a dozen careers pages in three different systems, so checking them is an hour a week and is the first thing to get skipped* through *one scheduled fetch of three keyless public APIs, a documented keyword filter, and a diff against what was seen yesterday*. It occupies the space between a job board's own email alert (which is per-company, marketing-shaped, and cannot be audited) and a full job-search platform (which ranks by opaque relevance and applies pressure to apply). It succeeds when the person can read a list of ten postings in two minutes, knowing why each one is on it, without having opened a single careers page.
 
-**The single biggest unresolved question.** How many companies it takes to reach 50–300 kept records. The 2026-09-19 sweep of seven companies returned 643 postings and the teaching filter kept six roles. The record count is the load-bearing unknown, and `[TODO: DEFINE]` the company list is the open decision.
+**The single biggest unresolved question — now answered.** On 2026-09-19 seven companies returned 643 postings and the filter kept six, which put the 50-record floor in doubt. On 2026-09-26 the watch list was widened to 13 reachable boards across three systems and probed: **2,150 postings, 59 kept.** That clears the floor without touching the keywords. The remaining unknown is not the count but the coverage — **five companies cannot be read at all, four of them Tier 1** (Adobe, Salesforce, GitHub, Google), so the list is incomplete by construction. See `ATS.md`.
 
 ---
 
@@ -69,6 +70,12 @@ One command, three sources, six steps: download → normalise → filter → ded
 **Honors it.** SmartRecruiters times out; Greenhouse and Ashby records are written; the report says SmartRecruiters unavailable.
 **Violates it.** Aborting the run, or writing the state file anyway so tomorrow's diff silently skips today's postings.
 **Failure state if ignored.** A flaky third-party API makes the whole pipeline useless, or worse, quietly drops a day.
+
+### P5 — Watch the company, not the current opening
+**Commitment.** A company stays on the watch list whether or not it has a matching role today. Zero matches is a result about this week, not a reason to stop looking.
+**Honors it.** Vercel, Miro, Airtable, and Jasper AI matched nothing on 2026-09-26 and remain in `sources.json` with their zero recorded.
+**Violates it.** Pruning the list to the companies that currently match, which is how a watcher becomes a snapshot.
+**Failure state if ignored.** The first day Vercel posts an AI-curriculum role is the day the list would have stopped including Vercel. Professor Bear's rule, 2026-09-26: *"AI grows so fast that the agent should check the company regardless if they have explicit educational roles or educational advocate roles or AI advocate roles. Because it's likely these companies are going to create those roles if they don't have them now. So the agent should check."*
 
 **Principle collision test.** P1 (keep source names) collides with P2's readability requirement and with the CSV deliverable: a CSV needs one header row, and three sources do not share field names. **Resolution: P1 is primary for the JSON, which is the evidence file. The CSV is explicitly a derived view** — it carries a documented common subset (`source`, `source_id`, `title`, `url`, `location_text`, `date_posted`, `matched_words`) plus the original date string, and the SDD states that the CSV is not the record of truth. P1 is never relaxed in the JSON.
 
@@ -456,7 +463,8 @@ collect.py → Person            : exit 2, "state file is corrupt — move it as
 
 | Risk | Category | Likelihood | Impact | Trigger | Mitigation | Contingency | Owner |
 |---|---|---|---|---|---|---|---|
-| **R1 — Not enough records.** The teaching filter keeps far too few postings to reach 50–300 | Scope | **High** | **High** — a named deliverable is unmet | 2026-09-19: 643 postings → 6 kept | Widen the company list to 20–30 boards, never the keywords; the prediction fixes this as the failure condition in advance | C19: add career-blog RSS as a fourth source. If still short, report the real number and the honest reason | Professor Bear |
+| **R1 — Not enough records.** ~~The teaching filter keeps far too few postings~~ **Largely retired 2026-09-26** | Scope | ~~High~~ **Low** | High if it returned | 2026-09-19: 643 → 6 kept. 2026-09-26, 13 boards: **2,150 → 59 kept** | Widening the company list fixed it, exactly as predicted, and the keywords were never touched | C19 (career-blog RSS) is no longer needed for the count. Kept in the register because a board can shrink | Professor Bear |
+| **R9 — Incomplete coverage.** Four Tier 1 education companies cannot be read at all | External dependency | **Certain — it is the current state** | **Medium** — the watch list silently omits the companies with the deepest education programs | Adobe, Salesforce, GitHub, Google returned no board on any of the three APIs under any slug tried | `ATS.md` states the gap and refuses to guess an ATS; the count of unreachable companies is reported next to the count of reachable ones | Identify each ATS by hand from its careers page; add a provider only if it has a public JSON endpoint | Professor Bear |
 | **R2 — A public API closes or starts requiring a key** | External dependency | Medium | Medium — one source lost | 401/403 where there was none | Three independent sources; any one can fail (P4) | Replace that source with RSS; document the change | Professor Bear |
 | **R3 — SmartRecruiters rate-limits the N+1 loop** | External dependency | Medium | Medium — Canva's board becomes slow or partial | 429s, or timeouts under load | Inter-call delay; per-posting error isolation; `raw/` caching so filter changes never re-fetch | Title-first fetching (§14), recorded as weakening P2 | Professor Bear |
 | **R4 — `original` silently drifts from the raw response** | Data integrity | Low | **High** — P1 broken, records stop being evidence, and nothing at runtime would notice | A normaliser refactor that copies instead of referencing | INV-3 has no runtime enforcement; an explicit test diffs kept records against their raw originals | If it happens, all affected outputs are regenerated from `raw/` — which is exactly why P2 exists | Professor Bear |
@@ -479,7 +487,8 @@ collect.py → Person            : exit 2, "state file is corrupt — move it as
 
 | # | Question | Stakes | Deadline | Options | Owner | Status |
 |---|---|---|---|---|---|---|
-| Q1 | Which companies go in `sources.json`? | Directly determines R1. Nothing else can be finished without it | 2026-09-28 | (a) the 7 design tools; (b) 7 + AI/dev-tool firms that hire advocates; (c) 25–30 boards to clear 150 records | Professor Bear | **Open** — `[TODO: DEFINE]` |
+| Q1 | Which companies go in `sources.json`? | Directly determined R1 | 2026-09-28 | — | Professor Bear | **DECIDED 2026-09-26** — 13 reachable boards, in `sources.json`, every company watched regardless of whether it matches today (P5). 5 more are unreachable and named |
+| Q9 | Which ATS do Adobe, Salesforce, GitHub, Google, and Shopify use? | Four are Tier 1; the watch list is incomplete without them | 2026-09-30 | Open each careers page and read where the apply button posts; then add a provider only if that ATS has a public JSON feed | Professor Bear | **Open** — `[TODO: DATA SOURCE]`. Deliberately not guessed |
 | Q2 | If 20+ companies still yield under 50 kept records, ship the short list or add RSS? | Honesty of the deliverable versus a named requirement | 2026-09-30 | (a) ship short with the reason; (b) add C19 RSS; (c) both, RSS labelled as a fourth source | Professor Bear | **Open** |
 | Q3 | Is `flex_text` a keep criterion or only an annotation? | Changes what "kept" means, which changes every count | 2026-09-28 | Currently: annotation only. Alternative: keep-on-flex, which would pull in part-time jobs with nothing to do with teaching | Professor Bear | **In discussion** — the SDD assumes annotation |
 | Q4 | Does the CSV carry `location_text` as written, or split city/region/remote? | P1 versus spreadsheet usability | 2026-09-29 | (a) as written (current); (b) add parsed columns *beside* the original | Professor Bear | **Open** |

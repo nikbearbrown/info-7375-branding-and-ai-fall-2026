@@ -27,6 +27,9 @@
 !/fall-2026/nik-bear-brown/
 # …but the Figma API book inside it is its own GitHub project, linked, never embedded
 /fall-2026/nik-bear-brown/brutalist-figma-claude/
+# Lectern's saved API responses: 32 MB/run (OpenAI alone is 14 MB). The two curated data
+# files ARE committed; raw/ is local evidence, regenerated with `python3 collect.py`.
+/fall-2026/nik-bear-brown/assignment-3/raw/
 !/youtube/
 /youtube/*
 !/youtube/README.md
