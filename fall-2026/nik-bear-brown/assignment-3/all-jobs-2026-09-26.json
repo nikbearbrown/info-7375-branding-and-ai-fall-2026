@@ -1,7 +1,7 @@
 {
   "tool": "lectern",
-  "generated_at": "2026-09-26T20:15:37+00:00",
-  "keywords_version": "0.2.1",
+  "generated_at": "2026-09-27T02:04:53+00:00",
+  "keywords_version": "0.4.0",
   "sources": [
     {
       "company": "Anthropic",
@@ -117,11 +117,11 @@
     "boards_ok": 18,
     "postings_fetched": 3446,
     "postings_unique": 3446,
-    "kept": 88,
+    "kept": 97,
     "rejected": {
       "only 2 topic words, no role word in title": 63,
-      "only 1 topic words, no role word in title": 950,
-      "no-keyword-match": 2345
+      "only 1 topic words, no role word in title": 945,
+      "no-keyword-match": 2341
     }
   },
   "note": "Every posting found on every watched board. Ad text is omitted here for file size; the full text is in raw/ exactly as each API sent it.",
@@ -5375,8 +5375,8 @@
       "department": "Safeguards (Trust & Safety)",
       "date_posted": "2026-09-01",
       "date_raw": "2026-09-01T23:41:10-04:00",
-      "kept": false,
-      "reject_reason": "only 1 topic words, no role word in title"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "greenhouse",
@@ -7676,8 +7676,8 @@
       "department": "Technical Education",
       "date_posted": "2026-07-24",
       "date_raw": "2026-07-24T18:21:50-04:00",
-      "kept": false,
-      "reject_reason": "only 1 topic words, no role word in title"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "greenhouse",
@@ -20923,8 +20923,8 @@
       "department": "Global Operations",
       "date_posted": "2026-09-03",
       "date_raw": "2026-09-03T14:24:41-04:00",
-      "kept": false,
-      "reject_reason": "no-keyword-match"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "greenhouse",
@@ -22860,8 +22860,8 @@
       "department": "1512 Global Sales Enablement",
       "date_posted": "2026-09-03",
       "date_raw": "2026-09-03T19:09:56-04:00",
-      "kept": false,
-      "reject_reason": "only 1 topic words, no role word in title"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "greenhouse",
@@ -33000,8 +33000,8 @@
       "department": "Go To Market / Technical Success",
       "date_posted": "2026-06-25",
       "date_raw": "2026-06-25T05:15:08.956+00:00",
-      "kept": false,
-      "reject_reason": "no-keyword-match"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "ashby",
@@ -34274,8 +34274,8 @@
       "department": "Go To Market / Technical Success",
       "date_posted": "2026-08-27",
       "date_raw": "2026-08-27T00:20:44.015+00:00",
-      "kept": false,
-      "reject_reason": "no-keyword-match"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "ashby",
@@ -36198,8 +36198,8 @@
       "department": "Applied AI / Applied AI",
       "date_posted": "2026-09-03",
       "date_raw": "2026-09-03T19:51:26.815+00:00",
-      "kept": false,
-      "reject_reason": "only 1 topic words, no role word in title"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "ashby",
@@ -37212,8 +37212,8 @@
       "department": "Applied AI / Codex – Developer Experience",
       "date_posted": "2026-09-11",
       "date_raw": "2026-09-11T02:51:53.931+00:00",
-      "kept": false,
-      "reject_reason": "no-keyword-match"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "ashby",
@@ -40566,8 +40566,8 @@
       "department": "User Operations / Knowledge & Education",
       "date_posted": "2026-09-02",
       "date_raw": "2026-09-02T04:14:53.319+00:00",
-      "kept": false,
-      "reject_reason": "only 1 topic words, no role word in title"
+      "kept": true,
+      "reject_reason": null
     },
     {
       "source": "ashby",

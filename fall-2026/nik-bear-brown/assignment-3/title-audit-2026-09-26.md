@@ -1,10 +1,10 @@
-# Title audit — Lectern run of 2026-09-26
+# Title audit — Lectern run of 2026-09-27
 
 ## Executive summary
 
-**What this is.** Every one of the **3,446 postings** sorted by what kind of job its title names, then compared against what that kind of job *should* do in the filter. The point is scale: there are 19 job functions here and 3,082 distinct titles, so instead of reading 3,446 postings you judge **18 family rules** and then read only the disagreements.
+**What this is.** Every one of the **3,446 postings** sorted by what kind of job its title names, then compared against what that kind of job *should* do in the filter. The point is scale: there are 20 job functions here and 3,082 distinct titles, so instead of reading 3,446 postings you judge **19 family rules** and then read only the disagreements.
 
-**What it found.** 45 postings were **kept from families that should never produce a keep** — the false positives. 2 were **rejected from families that should always produce a keep** — the candidate false negatives. 527 sit in families marked *judge*, where the word genuinely means two different jobs and only a person can split them.
+**What it found.** 27 postings were **kept from families that should never produce a keep** — the false positives. 1 were **rejected from families that should always produce a keep** — the candidate false negatives. 535 sit in families marked *judge*, where the word genuinely means two different jobs and only a person can split them.
 
 **The most useful thing it found is a bug in itself.** The first version of this audit treated *training* as a teaching word and duly reported 27 rejected "education" jobs — which looked like a serious false-negative problem. They were **Pre-training, Post-Training, Training Runtime, and Researcher, Training**: machine-learning jobs. At an AI company *training* means training a model. The filter had been right about all of them and the audit was wrong. That is why `ML_TRAINING` is the first family rule and why every false-friend family carries a note explaining what the word actually means here.
 
@@ -20,41 +20,34 @@
 |---|---|---:|---:|---:|---:|---|
 | **ML_TRAINING** | reject | 0 | 26 | 26 | 25 | FALSE FRIEND, and the reason this family is first. At an AI company 'training' overwhelmingly means training a MODEL, not teaching a person. 25 of the 27 postings whose titles contain a teaching word  |
 | **TEACHING** | keep | 6 **← 1 rejected** | 1 | 7 | 7 | People being taught. This is the target. |
-| **ADVOCACY** | keep | 10 **← 1 rejected** | 1 | 11 | 11 | Teaching a public rather than a classroom. Also the target. |
-| **SALES_ENABLEMENT** | reject | 13 **← 13 kept** | 0 | 13 | 12 | FALSE FRIEND. 'Enablement' is the most-matched word in the run and at most of these companies it is a sales-support function — training the sales team on the product, not teaching customers or the pub |
-| **TECH_ENABLEMENT** | reject | 7 **← 7 kept** | 0 | 7 | 7 | FALSE FRIEND. Here 'enablement' means making a system capable of something. These are engineering jobs. |
+| **ADVOCACY** | keep | 11 | 0 | 11 | 11 | Teaching a public rather than a classroom. Also the target. |
+| **MATERIALS** | keep | 4 | 0 | 4 | 4 | ADDED 2026-09-26. Jobs whose product is the MATERIALS — docs, guides, tutorials, courseware, reference builds. Anthropic's 'Technical Documentation and Content Engineer, Claude Docs' is the model. Not |
+| **SALES_ENABLEMENT** | keep | 13 | 0 | 13 | 12 | REVERSED 2026-09-26 by Professor Bear: "developing materials… to train their own people would be a great fit." Sales enablement builds curriculum, runs live training, and produces onboarding content f |
+| **TECH_ENABLEMENT** | reject | 7 **← 7 kept** | 0 | 7 | 7 | FALSE FRIEND. Here 'enablement' means making a system capable of something. These are engineering jobs. Still a reject: here 'enablement' describes a system gaining a capability, with no materials and |
 | **CUSTOMER_ENABLEMENT** | judge | 8 | 0 | 8 | 8 | GENUINELY AMBIGUOUS. Customer enablement does teach — live training, workshops, adoption plans — but for paying accounts, with renewal risk attached. Whether it counts is a judgment about what the sea |
-| **EDU_SALES** | reject | 9 **← 9 kept** | 0 | 9 | 7 | FALSE FRIEND. Selling INTO schools is not teaching in them. Canva's Higher Education Account Executives are the clearest case. |
+| **EDU_SALES** | judge | 9 | 0 | 9 | 7 | MOVED to judge 2026-09-26: Professor Bear's target includes developing materials "to sell into universities." A Higher Education Account Executive who only carries a quota is still a reject; one who b |
 | **RECRUITING** | reject | 2 **← 2 kept** | 51 | 53 | 49 | FALSE FRIEND, and the one that caught the topic-word rule out. 'University', 'campus', and 'student' are campus-recruiting vocabulary as much as teaching vocabulary. |
 | **COMMUNITY** | judge | 10 | 12 | 22 | 22 | AMBIGUOUS. A developer-community manager teaches; a data-centre community-engagement manager does local-government relations; a security-community lead runs vulnerability disclosure. Same word, three  |
 | **SALES** | reject | 0 | 602 | 602 | 519 |  |
 | **CUSTOMER** | reject | 0 | 259 | 259 | 214 |  |
 | **MARKETING** | reject | 3 **← 3 kept** | 194 | 197 | 191 |  |
 | **DESIGN** | reject | 0 | 51 | 51 | 45 |  |
-| **RESEARCH_DATA** | reject | 1 **← 1 kept** | 312 | 313 | 252 |  |
-| **PRODUCT** | reject | 2 **← 2 kept** | 201 | 203 | 196 |  |
-| **ENGINEERING** | reject | 5 **← 5 kept** | 877 | 882 | 794 |  |
+| **RESEARCH_DATA** | reject | 2 **← 2 kept** | 311 | 313 | 252 |  |
+| **PRODUCT** | reject | 2 **← 2 kept** | 200 | 202 | 195 |  |
+| **ENGINEERING** | reject | 6 **← 6 kept** | 874 | 880 | 792 |  |
 | **G_AND_A** | reject | 2 **← 2 kept** | 154 | 156 | 150 |  |
-| **OPERATIONS** | reject | 1 **← 1 kept** | 129 | 130 | 124 |  |
-| **UNCLASSIFIED** | judge | 9 | 488 | 497 | 449 | No family matched the title. Either a function nobody listed, or a title too vague to classify. |
-| TOTAL | | 88 | 3358 | 3,446 | 3,082 | |
+| **OPERATIONS** | reject | 3 **← 3 kept** | 127 | 130 | 124 |  |
+| **UNCLASSIFIED** | judge | 9 | 487 | 496 | 448 | No family matched the title. Either a function nobody listed, or a title too vague to classify. |
+| TOTAL | | 97 | 3349 | 3,446 | 3,082 | |
 
-## Kept, but the family says reject — 45 false positives
+## Kept, but the family says reject — 27 false positives
 
 | Family | Company | Title | Location | Why the filter decided that | Verdict | Note |
 |---|---|---|---|---|---|---|
-| EDU_SALES | Anthropic | [Research & Education Sales Lead, Beneficial Deployments](https://job-boards.greenhouse.io/anthropic/jobs/5415930008) | San Francisco, CA / New York Cit |  |  |  |
-| EDU_SALES | Canva | [Account Executive, Higher Education](https://jobs.smartrecruiters.com/Canva/6000000001424458-account-executive-higher-education) | Austin, , United States |  |  |  |
-| EDU_SALES | Canva | [Account Executive, Higher Education (LATAM)](https://jobs.smartrecruiters.com/Canva/6000000001424453-account-executive-higher-education-latam-) | Austin, , United States |  |  |  |
-| EDU_SALES | Canva | [Business Development Representative (Higher Education - Public Sector)](https://jobs.smartrecruiters.com/Canva/6000000001375179-business-development-representative-higher-education-public-sector-) | Austin, TX, United States |  |  |  |
-| EDU_SALES | Canva | [Higher Education Account Executive](https://jobs.smartrecruiters.com/Canva/6000000001371584-higher-education-account-executive) | Sydney, NSW, Australia |  |  |  |
-| EDU_SALES | Canva | [K-12 Education Account Manager Vietnam (12-Month Contract)](https://jobs.smartrecruiters.com/Canva/6000000001319223-k-12-education-account-manager-vietnam-12-month-contract-) | Ho Chi Minh City, Ho Chi Minh, V |  |  |  |
-| EDU_SALES | Stripe | [University Recruiter](https://stripe.com/jobs/search?gh_jid=8226211) | San Francisco, New York, Seattle |  |  |  |
-| EDU_SALES | Stripe | [University Recruiter](https://stripe.com/jobs/search?gh_jid=8128011) | Dublin, London |  |  |  |
-| EDU_SALES | Stripe | [University Recruiter](https://stripe.com/jobs/search?gh_jid=8159355) | N/A |  |  |  |
 | ENGINEERING | Anthropic | [Full Stack Engineer, Education Labs](https://job-boards.greenhouse.io/anthropic/jobs/5097186008) | San Francisco, CA / New York Cit |  |  |  |
 | ENGINEERING | Anthropic | [Software Engineer, Education](https://job-boards.greenhouse.io/anthropic/jobs/5389305008) | San Francisco, CA / New York Cit |  |  |  |
 | ENGINEERING | Anthropic | [Technical Architect](https://job-boards.greenhouse.io/anthropic/jobs/5421566008) | Remote-Friendly (Travel-Required |  |  |  |
+| ENGINEERING | OpenAI | [Developer Experience Engineer, Cyber](https://jobs.ashbyhq.com/openai/708121e8-51ac-4a24-a2ff-bd9889ba5486) | San Francisco |  |  |  |
 | ENGINEERING | OpenAI | [Full Stack Software Engineer, Education](https://jobs.ashbyhq.com/openai/9b1b62f5-1400-4672-910a-fda6f975f642) | San Francisco |  |  |  |
 | ENGINEERING | OpenAI | [Full-Stack Engineer, ChatGPT Education  & Learning](https://jobs.ashbyhq.com/openai/ef828b89-41ed-4cde-96a9-94ffe5770d4c) | San Francisco |  |  |  |
 | G_AND_A | OpenAI | [Enablement Lead, Government](https://jobs.ashbyhq.com/openai/4cfc6b6b-dd8f-4101-897d-3217e45db1e4) | Washington, DC |  |  |  |
@@ -63,24 +56,14 @@
 | MARKETING | OpenAI | [Integrated Marketing Manager, Youth Culture](https://jobs.ashbyhq.com/openai/58f32cbe-8c68-415c-bb7f-b6fca4b29ffc) | San Francisco |  |  |  |
 | MARKETING | Replit | [Japan Growth Lead](https://jobs.ashbyhq.com/replit/999e1432-3edd-453b-b598-ab4b26e1bc5c) | Remote - Japan |  |  |  |
 | OPERATIONS | Canva | [International Growth Strategy Lead (Education)](https://jobs.smartrecruiters.com/Canva/6000000001329699-international-growth-strategy-lead-education-) | Sydney, , Australia |  |  |  |
-| PRODUCT | Canva | [Program Manager: Education Content (FTC)](https://jobs.smartrecruiters.com/Canva/6000000001399105-program-manager-education-content-ftc-) | Sydney, , Australia |  |  |  |
+| OPERATIONS | OpenAI | [AI Deployment Manager (Builder) - Tokyo](https://jobs.ashbyhq.com/openai/bb569a6b-a7e9-4c4d-a78e-d35349b2f9d9) | Tokyo, Japan |  |  |  |
+| OPERATIONS | OpenAI | [AI Deployment Manager - Builder](https://jobs.ashbyhq.com/openai/9675cfd2-a983-49d7-80db-d3d58c42eb08) | San Francisco |  |  |  |
 | PRODUCT | Canva | [Project Manager, Education Team (Full time, 1-year contract)](https://jobs.smartrecruiters.com/Canva/6000000001287015-project-manager-education-team-full-time-1-year-contract-) | Delhi, , India |  |  |  |
+| PRODUCT | Stripe | [Training Program Manager](https://stripe.com/jobs/search?gh_jid=8172111) | Mexico City |  |  |  |
 | RECRUITING | Netlify | [Your Chance to Join Our Talent Community!](https://job-boards.greenhouse.io/netlify/jobs/4224129002) | Remote |  |  |  |
 | RECRUITING | Notion | [Head of Early Career Recruiting](https://jobs.ashbyhq.com/notion/076371b1-e9b0-4ad7-b67b-ae9e4572f65a) | San Francisco, California · New  |  |  |  |
+| RESEARCH_DATA | Anthropic | [Safeguards Enforcement Analyst, Conventional Weapons](https://job-boards.greenhouse.io/anthropic/jobs/5410006008) | San Francisco, CA / New York Cit |  |  |  |
 | RESEARCH_DATA | OpenAI | [Applied AI Architect, Education](https://jobs.ashbyhq.com/openai/98bffd0e-05cf-4748-93f1-b115c84e37b4) | London, UK |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [BDR Enablement Lead](https://job-boards.greenhouse.io/anthropic/jobs/5390984008) | San Francisco, CA / New York Cit |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [Cloud Partner Enablement Lead](https://job-boards.greenhouse.io/anthropic/jobs/5369181008) | San Francisco, CA / New York Cit |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [GTM Enablement Trainer, Claude Products](https://job-boards.greenhouse.io/anthropic/jobs/5428790008) | San Francisco, CA / New York Cit |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [Head of APAC GTM Enablement](https://job-boards.greenhouse.io/anthropic/jobs/5426627008) | Singapore |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [Partner Enablement Lead, System Integrators](https://job-boards.greenhouse.io/anthropic/jobs/5188391008) | San Francisco, CA / New York Cit |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [Sales Enablement Lead, GTM Onboarding](https://job-boards.greenhouse.io/anthropic/jobs/5390972008) | San Francisco, CA |  |  |  |
-| SALES_ENABLEMENT | Anthropic | [Sales Leader Enablement](https://job-boards.greenhouse.io/anthropic/jobs/5390960008) | San Francisco, CA / New York Cit |  |  |  |
-| SALES_ENABLEMENT | Figma | [Senior Field Enablement Manager (Tokyo, Japan)](https://boards.greenhouse.io/figma/jobs/6003308004?gh_jid=6003308004) | Tokyo, Japan |  |  |  |
-| SALES_ENABLEMENT | OpenAI | [Strategic Cloud Partner Enablement Lead](https://jobs.ashbyhq.com/openai/ab9ddb8f-a479-4931-910a-cabcf205d95e) | San Francisco |  |  |  |
-| SALES_ENABLEMENT | Stripe | [Manager, Go-to-Market Enablement Business Partners](https://stripe.com/jobs/search?gh_jid=8212674) | San Francisco |  |  |  |
-| SALES_ENABLEMENT | Stripe | [Product Sales Enablement Business Partner](https://stripe.com/jobs/search?gh_jid=7994063) | US-San Francisco |  |  |  |
-| SALES_ENABLEMENT | Stripe | [Program Manager, Risk Operations GTM Enablement](https://stripe.com/jobs/search?gh_jid=8209641) | Dublin, Ireland |  |  |  |
-| SALES_ENABLEMENT | Stripe | [Program Manager, Risk Operations GTM Enablement](https://stripe.com/jobs/search?gh_jid=8158082) | United States |  |  |  |
 | TECH_ENABLEMENT | GitLab | [Senior Backend Engineer, Platform Enablement](https://job-boards.greenhouse.io/gitlab/jobs/8750842002) | Remote, United States |  |  |  |
 | TECH_ENABLEMENT | Notion | [Workflow + Process Designer (AI Enablement)](https://jobs.ashbyhq.com/notion/c799f1f0-0e7b-4eac-98ce-44223130f2b0) | San Francisco, California |  |  |  |
 | TECH_ENABLEMENT | OpenAI | [Applied AI Engineer, Agent Enablement](https://jobs.ashbyhq.com/openai/c1a28411-266b-487b-8ef3-03efb254fc36) | San Francisco |  |  |  |
@@ -89,14 +72,13 @@
 | TECH_ENABLEMENT | OpenAI | [Software Engineer, Workload Enablement](https://jobs.ashbyhq.com/openai/9efcef02-0515-4672-bace-81329944b38b) | San Francisco · Seattle |  |  |  |
 | TECH_ENABLEMENT | Replit | [Senior Software Engineer, Growth Enablement](https://jobs.ashbyhq.com/replit/f2f56292-890e-498c-844c-07f2bea8ea7a) | Foster City, CA |  |  |  |
 
-## Rejected, but the family says keep — 2 candidate false negatives
+## Rejected, but the family says keep — 1 candidate false negatives
 
 | Family | Company | Title | Location | Why the filter decided that | Verdict | Note |
 |---|---|---|---|---|---|---|
-| ADVOCACY | Anthropic | [Technical Documentation and Content Engineer, Claude Docs](https://job-boards.greenhouse.io/anthropic/jobs/5370615008) | San Francisco, CA / New York Cit | only 1 topic words, no role word in title |  |  |
 | TEACHING | Notion | [[Contract] Language Training Specialist - Japanese](https://jobs.ashbyhq.com/notion/f1f9e19d-cbf3-49eb-9824-d04adf2e3d75) | Tokyo, Japan  | only 1 topic words, no role word in title |  |  |
 
-## The *judge* families — 527 postings where the word means two different jobs
+## The *judge* families — 535 postings where the word means two different jobs
 
 | Family | Company | Title | Location | Why the filter decided that | Verdict | Note |
 |---|---|---|---|---|---|---|
@@ -130,6 +112,15 @@
 | CUSTOMER_ENABLEMENT | Figma | [Manager, Customer Enablement (Tokyo, Japan)](https://boards.greenhouse.io/figma/jobs/6144873004?gh_jid=6144873004) | Tokyo, Japan |  |  |  |
 | CUSTOMER_ENABLEMENT | Notion | [Manager, Enablement Programs](https://jobs.ashbyhq.com/notion/98bb09a8-2fdf-4c12-84dd-8568553159d8) | San Francisco, California |  |  |  |
 | CUSTOMER_ENABLEMENT | Stripe | [Compliance Manager, User Enablement](https://stripe.com/jobs/search?gh_jid=7530580) | Dublin OR London |  |  |  |
+| EDU_SALES | Anthropic | [Research & Education Sales Lead, Beneficial Deployments](https://job-boards.greenhouse.io/anthropic/jobs/5415930008) | San Francisco, CA / New York Cit |  |  |  |
+| EDU_SALES | Canva | [Account Executive, Higher Education](https://jobs.smartrecruiters.com/Canva/6000000001424458-account-executive-higher-education) | Austin, , United States |  |  |  |
+| EDU_SALES | Canva | [Account Executive, Higher Education (LATAM)](https://jobs.smartrecruiters.com/Canva/6000000001424453-account-executive-higher-education-latam-) | Austin, , United States |  |  |  |
+| EDU_SALES | Canva | [Business Development Representative (Higher Education - Public Sector)](https://jobs.smartrecruiters.com/Canva/6000000001375179-business-development-representative-higher-education-public-sector-) | Austin, TX, United States |  |  |  |
+| EDU_SALES | Canva | [Higher Education Account Executive](https://jobs.smartrecruiters.com/Canva/6000000001371584-higher-education-account-executive) | Sydney, NSW, Australia |  |  |  |
+| EDU_SALES | Canva | [K-12 Education Account Manager Vietnam (12-Month Contract)](https://jobs.smartrecruiters.com/Canva/6000000001319223-k-12-education-account-manager-vietnam-12-month-contract-) | Ho Chi Minh City, Ho Chi Minh, V |  |  |  |
+| EDU_SALES | Stripe | [University Recruiter](https://stripe.com/jobs/search?gh_jid=8226211) | San Francisco, New York, Seattle |  |  |  |
+| EDU_SALES | Stripe | [University Recruiter](https://stripe.com/jobs/search?gh_jid=8128011) | Dublin, London |  |  |  |
+| EDU_SALES | Stripe | [University Recruiter](https://stripe.com/jobs/search?gh_jid=8159355) | N/A |  |  |  |
 | UNCLASSIFIED | Anthropic | [AV Production Specialist](https://job-boards.greenhouse.io/anthropic/jobs/5379593008) | San Francisco, CA | only 1 topic words, no role word in title |  |  |
 | UNCLASSIFIED | Anthropic | [Anthropic Fellows Program, ML Systems & Reinforcement Learning](https://job-boards.greenhouse.io/anthropic/jobs/5183051008) | London, UK; Ontario, CAN; Remote | only 1 topic words, no role word in title |  |  |
 | UNCLASSIFIED | Anthropic | [Compute Country Lead, Canada](https://job-boards.greenhouse.io/anthropic/jobs/5385546008) | Remote-Friendly (Travel Required | only 1 topic words, no role word in title |  |  |
@@ -471,7 +462,6 @@
 | UNCLASSIFIED | Replit | [Cohort 0](https://jobs.ashbyhq.com/replit/2c147ccb-2557-40f8-aab9-64422cef220c) | Foster City, CA | no-keyword-match |  |  |
 | UNCLASSIFIED | Replit | [Director of Product Design](https://jobs.ashbyhq.com/replit/b386f0ef-41e1-48e4-abe3-d35ce627de95) | Foster City, CA | no-keyword-match |  |  |
 | UNCLASSIFIED | Replit | [Engineering Manager, Site Reliability Engineering](https://jobs.ashbyhq.com/replit/226d0562-2420-4991-ac18-23c827ed119c) | Foster City, CA | no-keyword-match |  |  |
-| UNCLASSIFIED | Replit | [Learning Experiences Creator](https://jobs.ashbyhq.com/replit/e658545c-ee42-48b5-8f39-c43991b02164) | Foster City, CA | only 1 topic words, no role word in title |  |  |
 | UNCLASSIFIED | Replit | [Partnerships Lead, GSIs](https://jobs.ashbyhq.com/replit/e673256c-7701-4b97-b7f4-800b68f03f84) | Foster City, CA | no-keyword-match |  |  |
 | UNCLASSIFIED | Replit | [Product Partnerships Manager, Consumer/SMB](https://jobs.ashbyhq.com/replit/56d7dc53-f4ba-4147-9aaa-0fd4af7cbb4f) | Foster City, CA | no-keyword-match |  |  |
 | UNCLASSIFIED | Replit | [Senior AI Builder](https://jobs.ashbyhq.com/replit/b333118f-965a-4d94-9557-88aa76779e9a) | Foster City, CA | no-keyword-match |  |  |

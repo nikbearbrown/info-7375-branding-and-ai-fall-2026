@@ -1,27 +1,24 @@
-# Lectern run — 2026-09-26
+# Lectern run — 2026-09-26 (final pass)
 
 ## Executive summary
 
-**What ran.** Lectern fetched **18 job boards across three applicant-tracking systems**, read **3,446 postings**, and kept **88** whose titles or text are about teaching, advocacy, or education. Both data files are in this folder: [`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json) — every posting, kept or rejected, with the reason — and [`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json), the 88 kept with the words that matched and the full text.
+**What ran.** 18 job boards, three applicant-tracking systems, **3,446 postings**, **97 kept**. Data: [`all-jobs-2026-09-26.json`](all-jobs-2026-09-26.json) (every posting, with the reject reason) and [`jobs-of-interest-2026-09-26.json`](jobs-of-interest-2026-09-26.json) (the kept ones, with the words that matched and the full text).
 
-**Six roles are both remote and genuinely advocacy** — the actual answer to the question this tool exists to ask:
+**What the target became.** It started as "advocate or educator roles." It is now **any job whose product is teaching materials** — for universities, for the public, or for the company's own staff. Anthropic's *Technical Documentation and Content Engineer, Claude Docs* is the model, and the two roles that best fit it were both invisible to the first filter:
 
-| Company | Role | Where |
+| Found this pass | Where | Caught by |
 |---|---|---|
-| **GitLab** | Senior Developer Advocate | Remote, Canada **and Remote, United States** |
-| **Supabase** | Developer Relations Engineer (×3) | Remote + SF · Remote + New York · Remote + London |
-| **Webflow** | Senior Developer Educator | U.S. Remote (1 week/month in SF) |
-| **HubSpot** | Academy Professor, French & Portuguese | Remote — Ireland |
+| **Anthropic — Technical Documentation and Content Engineer, Claude Docs** | SF · NYC | title word `documentation` / `content engineer` |
+| **Replit — Learning Experiences Creator** | Foster City, CA | title word `learning experiences` / `creator` |
+| **Stripe — Training Program Manager** | Mexico City | body: *instructional design* |
+| **OpenAI — AI Deployment Manager (Builder)** ×2 | SF · Tokyo | body: *instructional design* |
+| **OpenAI — Developer Experience Engineer, Cyber** | SF | body: *create tutorials* |
 
-**Three findings from widening the list.**
+**The one that should not have been missed.** Replit's *Learning Experiences Creator* is as close to a bullseye as this board has, and the filter rejected it because the list held `learning designer` and not `learning experiences`. One word.
 
-1. **Vercel went from zero to one.** It matched nothing in the morning run and by the afternoon had a *DevRel Engineer, Agentic Infrastructure*. That is the whole argument for P5 — watch the company, not the current opening — proving itself inside one day.
-2. **The two biggest AI labs are hiring educators.** Anthropic: 23 matches, including *Developer Education Lead (Claude Platform)*, *Lead Technical Instructor*, *Head of Technical Training*. OpenAI: 17, including *Tech Lead Manager, Education*.
-3. **One keyword had to be cut for being noise, and the cut is recorded.** `developer experience` was added as an advocacy synonym, fired on 11 postings, and **10 of them were backend or platform software-engineering jobs**. It names an engineering discipline, not a role. Removed in `keywords.json` v0.2.1, along with `advocacy` (1 hit, a customer-marketing programme). `devrel` was kept — it is what found Vercel's role.
+**Three rules, and only one of them was ever measured honestly.** A posting is kept on a role word in its title, on three teaching words in its body, or — new this pass — on the body saying it produces teaching materials. The third rule had to be measured because it failed loudly: the first version kept **101 extra postings at roughly one-in-ten precision**, including all 15 Anthropic *Applied AI Architects* (matched *technical content* + *our users*) and four IT Support Engineers (matched *how-to guides*). Nine phrase groups were cut and it now contributes **5 postings, 4 of them right**. The other two rules have never been measured this way.
 
-**The quality number that matters.** Every kept record has a title, a URL, and a parseable date, because a record missing any of the three is never written. Completeness on the fields that can vary — location, department, date — is **3,446 / 3,446 (100%)** across every posting fetched. No duplicates.
-
-**The honest caveat.** **"Enablement" is the most common matched word by a wide margin — 34 of the 88 — and at Stripe and GitLab it usually means sales enablement, not teaching.** Those records are in the file because the filter is honest about what it matched, not because they are jobs worth reading.
+**A false positive that turned out not to be one.** The previous pass called 13 sales-enablement postings errors. They are not: building curriculum and running training for a company's own staff is the work, and an internal audience does not change that. `SALES_ENABLEMENT` now expects *keep*, and the 9 education-sales roles moved to *judge* — an account executive with only a quota is still a reject, one who builds the materials the sale runs on is not.
 
 ---
 
@@ -29,75 +26,42 @@
 
 | | |
 |---|---:|
-| Boards requested | 18 |
-| Boards that answered | 18 |
 | Postings fetched | 3,446 |
-| Unique postings | 3,446 |
-| **Kept** | **88** |
-| Rejected | 3,358 |
+| **Kept** | **97** |
+| Rejected | 3,349 |
 | Duplicates collapsed | 0 |
+| Completeness (title, url, date, location, department) | 3,446 / 3,446 |
 
-### Rejections, by reason
+### How the 97 were kept
+
+| Rule | Count |
+|---|---:|
+| role word in title | 83 |
+| 3 topic words in body (>= 3) | 5 |
+| body says it produces teaching materials for a named audience | 5 |
+| 4 topic words in body (>= 3) | 4 |
+
+### Rejections
 
 | Reason | Count |
 |---|---:|
-| No keyword match at all | 2,345 |
-| Only 1 topic word, no role word in the title | 950 |
-| Only 2 topic words, no role word in the title | 63 |
-| Missing title / URL / unparseable date | 0 |
-
-The rule keeps a posting on **one role word in the title** or **three or more topic words in the body**. That threshold is the most consequential number in `keywords.json`: the two "only N topic words" rows are 1,013 postings that mentioned teaching once or twice in passing.
-
-## Per board
-
-| Company | Source | Postings | Kept |
-|---|---|---:|---:|
-| OpenAI | ashby | 830 | 17 |
-| Stripe | greenhouse | 702 | 10 |
-| Anthropic | greenhouse | 618 | 23 |
-| GitLab | greenhouse | 199 | 3 |
-| Canva | smartrecruiters | 197 | 10 |
-| Figma | greenhouse | 163 | 9 |
-| Twilio | greenhouse | 138 | **0** |
-| HubSpot | greenhouse | 133 | 1 |
-| Notion | ashby | 128 | 5 |
-| Vercel | greenhouse | 88 | 1 |
-| Replit | ashby | 75 | 2 |
-| Supabase | ashby | 56 | 4 |
-| Writer | ashby | 51 | 1 |
-| Miro | greenhouse | 28 | **0** |
-| Webflow | greenhouse | 27 | 1 |
-| Jasper AI | ashby | 6 | **0** |
-| Netlify | greenhouse | 4 | 1 |
-| Airtable | greenhouse | 3 | **0** |
-
-Boards that matched nothing today — and stay on the watch list (P5): Twilio, Miro, Jasper AI, Airtable.
-
-## Completeness
-
-| Field | Present | Of |
-|---|---:|---:|
-| title | 3,446 | 3,446 |
-| url | 3,446 | 3,446 |
-| date_posted (parsed to `YYYY-MM-DD`) | 3,446 | 3,446 |
-| location_text | 3,446 | 3,446 |
-| department | 3,446 | 3,446 |
-
-100% on every field. That is a fact about these three APIs being well-formed, not a claim about Lectern's cleaning, which did nothing because nothing needed it.
+| no-keyword-match | 2,341 |
+| only 1 topic words, no role word in title | 945 |
+| only 2 topic words, no role word in title | 63 |
 
 ## What this run does not tell you
 
-- **Nothing here says a job is good.** 88 records matched words. `enablement` alone accounts for 34 of them and is usually a sales function.
-- **The watch list is incomplete.** Five companies from the target list cannot be read at all — Adobe, Salesforce, GitHub, Google, Shopify — and four are Tier 1 education players. Four more named as advocacy employers were also unreachable on all four APIs tried: **Hugging Face, Framer, Sketch, InVision**. See [`ATS.md`](ATS.md).
-- **This is one day.** Figma had 152 postings on 2026-09-19 and 163 today; Canva 248 then, 197 now. The counts are a snapshot.
-- **False negatives are still unmeasured.** `VERIFICATION.md` requires reading 20 rejects by hand to classify what the filter misses. Not done, so no accuracy figure is claimed in either direction.
+- **The two older rules are unmeasured.** The body-materials rule has a precision figure because it failed obviously. "Role word in title" and "three topic words" do not, beyond what the title audit surfaced.
+- **`enablement` is still the most-matched word** and still means several different jobs. It is now expected to keep, which is a decision about what the searcher wants, not a fact about the postings.
+- **Five words are known false friends here:** `training` (model training), `enablement` (sales support, or a system gaining a capability), `education` (a degree requirement in Anthropic's footer, a sales vertical at Canva), `learning` (machine learning — never added), `content` (SEO marketing).
+- **535 postings sit in *judge* families** in [`title-audit-2026-09-26.md`](title-audit-2026-09-26.md), unresolved.
+- **The watch list is incomplete.** Nine companies cannot be read at all; four are Tier 1 education players. See [`ATS.md`](ATS.md).
+- **One day.** These counts are a snapshot; the state file exists so tomorrow reports only what changed.
 
-## Reproduce it
+## Reproduce
 
 ```bash
-python3 collect.py                      # fetch all 18 boards, filter, write both files
-python3 collect.py --from-raw raw/      # no network; re-filter the saved responses
-python3 collect.py --only ashby         # one provider
+python3 collect.py                    # fetch 18 boards, filter, write both files
+python3 collect.py --from-raw raw/    # no network; re-filter the saved responses
+python3 audit_titles.py --all-jobs all-jobs-2026-09-26.json --out title-audit-2026-09-26.md
 ```
-
-`raw/` holds each response exactly as it arrived — about 45 MB for this run, so it is **not committed**. The two data files are, which is the point: open `all-jobs-2026-09-26.json`, find a posting Lectern rejected, and disagree.
