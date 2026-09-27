@@ -119,4 +119,5 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-09-26 | feat(fall-2026): build Lectern, watch 13 boards across 3 ATSs, publish all 2347 postings and the 69 kept |
 | 2026-09-26 | feat(fall-2026): add the advocacy-title companies, cut a keyword that measured as noise |
 | 2026-09-26 | docs(fall-2026): note that shared code is canonical in the Computational Skepticism folder |
-| 2026-09-26 | feat(fall-2026): reject audit sample (100 random + 63 closest calls) with two findings to rule on |
+| 2026-09-26 | feat(fall-2026): add the advocacy-title companies, cut a keyword that measured as noise |
+| | ↑ **the row above is the subject this commit actually carries.** The subject intended for it was *"feat(fall-2026): reject audit sample (100 random + 63 closest calls) with two findings to rule on"*; a scripting error reused an earlier commit's subject line. The content is correct; history was not rewritten to fix a label. |
