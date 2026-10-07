@@ -177,6 +177,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 
 ---
 
+### 2026-10-07 — The three-class sync check: nothing changed here
+
+- **Date and what I was working on:** The job-search example, kept in sync from the Computational Skepticism master.
+- **I tried / expected:** Professor Bear asked for all three classes to be checked and brought into sync, with the master updated from the others and all three pushed: "All three classes should be in sync." I expected this folder, which has the most run data, to be the one with changes the master lacked.
+- **What happened:** Nothing here was uncommitted, and every shared file in `assignment-3/` and `facts/` was byte-identical to the master, including `demand_report.py`. The one drift found was in Prompt Engineering, which was missing that script. This folder's extra files (the raw ATS downloads, the reject and title audits, the company-demand report, the advocate notes, the Figma book) are this class's own work by the `SYNC.md` rule and were correctly not copied anywhere.
+- **What I did:** Nothing was edited here. The master's sync list gained `demand_report.py` and its `sync.sh` was run for real for the first time; it copied nothing into this folder because this folder already matched.
+- **What Claude or another person contributed:** Claude Code ran the comparison in all three folders and reported the result; this entry records that the check was run and what it found. Pushed under the approval given on 2026-09-26.
+- **What I understand now / still do not understand:** A folder with the most data is not therefore the one that has drifted. Still open: nothing here.
+- **Evidence and next step:** the master's `./lectern/sync.sh --check` reporting "All three in sync." on 2026-10-07.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -195,3 +205,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-09-26 | feat(fall-2026): title audit — 45 false positives, 2 candidate misses, by job function |
 | 2026-09-26 | feat(fall-2026): materials target — 97 kept, Replit Learning Experiences Creator recovered |
 | 2026-09-26 | feat(fall-2026): company demand report — Anthropic 5/5; Google unreadable but verified by hand |
+| 2026-10-07 | docs(fall-2026): log the three-class sync check; nothing changed here |
