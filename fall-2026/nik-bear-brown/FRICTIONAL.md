@@ -187,6 +187,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** A folder with the most data is not therefore the one that has drifted. Still open: nothing here.
 - **Evidence and next step:** the master's `./lectern/sync.sh --check` reporting "All three in sync." on 2026-10-07.
 
+### 2026-10-07 — Gru's software design document for the whole project, in silent mode
+
+- **Date and what I was working on:** 2026-10-07. A software design document for everything being built under the job-search project, to be the source for the next film. The next film is not a journal log; it is a detailed overview of what is being built.
+- **I tried / expected:** I pasted the Gru prompt and said: "Run Gru in silent mode to generate a detailed software development document. Talk about Gru in a log after that … And add that SDD to the three folders on the GitHub." I expected a design document in the form Gru's `/g1` produces.
+- **What happened:** Claude Code ran the Gru prompt in silent mode: no intake questions, no pushback, no phase gates. It read the collector, its configuration, the audit scripts, the sync script, the earlier Lectern design document, the status report, the engine's skill and the three logs, then compiled sixteen sections and a seventeenth that Gru's format does not have: where the earlier design and the built code disagree. That comparison found two real gaps. The earlier design describes a seen-id state file and a "what is new since last time" report, plus `--dry-run` and `--all` flags; `collect.py` has none of them. And the collector's docstring says it writes a quality report, but `main()` writes only the `all-jobs` and `jobs-of-interest` files; the dated quality report on file was written outside the collector. Need N2, "see only what changed since the last run", is therefore unserved by the built tool.
+- **What I did:** The document is `SDD-job-search-project.md` in the Computational Skepticism folder, the master. I added it to `lectern/sync.sh`'s shared list and ran the sync, so the Branding and Prompt Engineering folders hold an identical copy; `sync.sh --check` reports all three in sync. Each repository is committed by hand with this entry. The Computational Skepticism push is on my word, given in the message above.
+- **What Claude or another person contributed:** I supplied the Gru prompt and the instruction to run it silent, to log it, and to add it to the three folders. Claude Code ran the prompt, read the files, wrote the document, changed the sync list and wrote this entry. This is Claude Code's run of Gru, not my answers to Gru's questions, and I have not reviewed the document. Unfilled fields are marked `TODO`, not guessed.
+- **What I understand now / still do not understand:** Not yet stated by me. What the compile found: the built tool and its earlier design differ in the two ways above; there are fourteen open questions in section 16, all mine. Claude Code did not run the collector, the audits or the sync for any counts in the document; they are quoted from the 2026-09-26 run files and the status report.
+- **Evidence and next step:** `SDD-job-search-project.md` in each folder; `lectern/sync.sh` in the master. Next: I read it, decide the open questions that matter first (a schedule, the five unreadable companies, and whether to build the state and diff or strike it from the earlier design), and the next film is built from this document.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -206,3 +216,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-09-26 | feat(fall-2026): materials target — 97 kept, Replit Learning Experiences Creator recovered |
 | 2026-09-26 | feat(fall-2026): company demand report — Anthropic 5/5; Google unreadable but verified by hand |
 | 2026-10-07 | docs(fall-2026): log the three-class sync check; nothing changed here |
+| 2026-10-07 | docs(fall-2026): add the project software design document, written by Gru in silent mode |
