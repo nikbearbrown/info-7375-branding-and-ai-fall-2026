@@ -207,6 +207,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** The draft is deliberately honest where unverified — design systems rated 2/5, Jobscan/Canva/Adobe marked TODO. Still open: Bear's review of the draft.
 - **Evidence and next step:** `assignment-1/` in this folder, five commits. Next: Bear reviews; the A5 brief work continues.
 
+### 2026-10-10 — Assignment 2 worked example, parts 2–4
+
+- **Date and what I was working on:** 2026-10-10. Completing the Assignment 2 worked example: Part 1 (dream job + seven-board appendix) was already on file; I wrote Parts 2–4 — gap analysis, PRD, technical architecture — plus a folder README, all in `assignment-2/`.
+- **I tried / expected:** Professor Bear said: "with the info you have, do assignment 2 too." I expected the existing Part 1 to ground everything: the Figma Designer Advocate posting, the four gaps, the Madison demand-signal agent from Assignment 1's proposal.
+- **What happened:** Muse drafted all four files from the Part 1 record and the project data. The gap table keeps the blocking gap from Part 1 (never shipped a token-based Figma design system) and adds the Webflow second column the appendix promised. The PRD specifies the demand-signal agent with success metrics measured the way the project already measures itself (the title audit: 45 false positives, 2 candidate misses). The architecture names three agents, the JSON schema between them, and a four-node n8n MVP — with an explicit won't-build list. All four pushes succeeded on the fresh token; no 403 this time.
+- **What I did:** Wrote `assignment-2/README.md`, `part-2-gap-analysis.md`, `part-3-prd.md`, `part-4-technical-architecture.md`, one commit per file; this entry is committed with the log update.
+- **What Claude or another person contributed:** Muse (this session) drafted Parts 2–4; the agent names, the metric targets, and the n8n node choices are Muse's modeling of the example, not Bear's words. Bear has not reviewed the draft.
+- **What I understand now / still do not understand:** The four parts now read as one argument: the job names the gap, the gap names the project, the PRD specifies it, the architecture scopes it. Still open: Bear's review.
+- **Evidence and next step:** `assignment-2/` in this folder, four commits. Next: Bear reviews Parts 2–4.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -233,3 +243,8 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-10 | feat(fall-2026): assignment 1 worked example — part-3-madison-proposal |
 | 2026-10-10 | feat(fall-2026): assignment 1 worked example — part-4-brand-baseline |
 | 2026-10-10 | docs(fall-2026): log the assignment-1 worked example in FRICTIONAL.md |
+| 2026-10-10 | feat(fall-2026): assignment 2 worked example — README |
+| 2026-10-10 | feat(fall-2026): assignment 2 worked example — part-2-gap-analysis |
+| 2026-10-10 | feat(fall-2026): assignment 2 worked example — part-3-prd |
+| 2026-10-10 | feat(fall-2026): assignment 2 worked example — part-4-technical-architecture |
+| 2026-10-10 | docs(fall-2026): log the assignment-2 parts 2-4 in FRICTIONAL.md |
