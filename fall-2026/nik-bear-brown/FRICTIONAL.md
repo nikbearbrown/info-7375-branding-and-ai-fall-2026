@@ -227,6 +227,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** The brief's excellence bar ("whose data is the cleanest?") is answered by the audits, not the volume — the 97 kept with reasons beats any 1,000-record dump. Still open: Bear's review.
 - **Evidence and next step:** `assignment-3/part-1-workflow.md`, `part-2-inventory.md`, `part-3-quality.md`, three commits. Next: Bear reviews.
 
+### 2026-10-10 — Assignment 4 worked example: intelligence, outputs, scale, package
+
+- **Date and what I was working on:** 2026-10-10. The "Scale Your Thing & Add Intelligence" worked example, five files in a new `assignment-4/`: README, Part 1 (intelligence + error handling), Part 2 (end-to-end + 15-output gallery), Part 3 (scale numbers), Part 4 (executive summary, architecture diagram, demo plan).
+- **I tried / expected:** Professor Bear said: "and this one as well" — same worked-example treatment as A1–A3. I expected every claim to trace to a real artifact: the classifier and demand ranker for intelligence, the committed reports for outputs, the actual runs for scale.
+- **What happened:** Muse drafted all five files from the project record. The intelligence is framed honestly — decisions with reasons, the demand ranker, the differ, the audit loop that learned (nine phrase groups cut after the materials rule failed at ~1-in-10) — not a chatbot bolted on. The gallery is 15 real artifacts, all committed. The scale section uses only numbers from runs that happened (3,446 postings; Canva 251 requests in 3m38s; Microsoft 429s) and names what breaks first and what it can't do yet. Five pushes, no errors.
+- **What I did:** Wrote the five files, one commit per file; this entry is committed with the log update.
+- **What Claude or another person contributed:** Muse (this session) drafted everything from the existing artifacts. Bear has not reviewed the draft.
+- **What I understand now / still do not understand:** A4's story is "A3 collected, A4 understood" — and the audit loop is the closest thing here to learning. Still open: Bear's review.
+- **Evidence and next step:** `assignment-4/` in this folder, five commits. Next: Bear reviews; the A5 brief remains the big open item (due Oct 16).
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -262,3 +272,9 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-10 | feat(fall-2026): assignment 3 brief deliverables — part-2-inventory |
 | 2026-10-10 | feat(fall-2026): assignment 3 brief deliverables — part-3-quality |
 | 2026-10-10 | docs(fall-2026): log the assignment-3 brief deliverables in FRICTIONAL.md |
+| 2026-10-10 | feat(fall-2026): assignment 4 worked example — README |
+| 2026-10-10 | feat(fall-2026): assignment 4 worked example — part-1-intelligence |
+| 2026-10-10 | feat(fall-2026): assignment 4 worked example — part-2-outputs |
+| 2026-10-10 | feat(fall-2026): assignment 4 worked example — part-3-scale |
+| 2026-10-10 | feat(fall-2026): assignment 4 worked example — part-4-package |
+| 2026-10-10 | docs(fall-2026): log the assignment-4 worked example in FRICTIONAL.md |
