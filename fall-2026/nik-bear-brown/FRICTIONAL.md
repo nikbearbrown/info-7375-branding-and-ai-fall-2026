@@ -217,6 +217,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** The four parts now read as one argument: the job names the gap, the gap names the project, the PRD specifies it, the architecture scopes it. Still open: Bear's review.
 - **Evidence and next step:** `assignment-2/` in this folder, four commits. Next: Bear reviews Parts 2–4.
 
+### 2026-10-10 — Assignment 3 brief deliverables, mapped onto the real run
+
+- **Date and what I was working on:** 2026-10-10. The "Collect Data for Your Madison Agent" brief (due 2026-10-02) asks for three documented deliverables — workflow, inventory/setup/demo, quality — and this folder already held the substance (collect.py, the 2026-09-26 run, both audits, the quality report) without the brief-shaped documentation. I wrote the three missing files: `part-1-workflow.md`, `part-2-inventory.md`, `part-3-quality.md`.
+- **I tried / expected:** Professor Bear said: "do assignment three same way" — the worked-example treatment, markdown in the folder, pushed and logged. I expected to write the documentation from the existing artifacts without re-running anything, per the brief's own "collect once, reuse forever" rule.
+- **What happened:** All numbers are the real ones: 3,446 postings from 18 boards across three ATS APIs, 97 kept, 0 duplicates, 3,446/3,446 complete on the required fields; title audit 45 false positives fixed and 2 candidate misses open; reject audit 100 random + 63 closest calls. The n8n workflow is documented as the four-node form from Assignment 2 Part 4, with the honest note that production runs use collect.py. Three pushes, no errors.
+- **What I did:** Wrote the three part files, one commit per file; this entry is committed with the log update.
+- **What Claude or another person contributed:** Muse (this session) wrote the three files from the folder's existing artifacts. Bear has not reviewed them. Note the folder's README says "kept 88" while the final-pass quality report says 97 — the quality report is the later number; the README predates it and is now stale on that count.
+- **What I understand now / still do not understand:** The brief's excellence bar ("whose data is the cleanest?") is answered by the audits, not the volume — the 97 kept with reasons beats any 1,000-record dump. Still open: Bear's review.
+- **Evidence and next step:** `assignment-3/part-1-workflow.md`, `part-2-inventory.md`, `part-3-quality.md`, three commits. Next: Bear reviews.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -248,3 +258,7 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-10 | feat(fall-2026): assignment 2 worked example — part-3-prd |
 | 2026-10-10 | feat(fall-2026): assignment 2 worked example — part-4-technical-architecture |
 | 2026-10-10 | docs(fall-2026): log the assignment-2 parts 2-4 in FRICTIONAL.md |
+| 2026-10-10 | feat(fall-2026): assignment 3 brief deliverables — part-1-workflow |
+| 2026-10-10 | feat(fall-2026): assignment 3 brief deliverables — part-2-inventory |
+| 2026-10-10 | feat(fall-2026): assignment 3 brief deliverables — part-3-quality |
+| 2026-10-10 | docs(fall-2026): log the assignment-3 brief deliverables in FRICTIONAL.md |
