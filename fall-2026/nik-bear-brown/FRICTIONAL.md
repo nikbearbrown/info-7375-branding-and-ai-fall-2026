@@ -197,6 +197,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** Not yet stated by me. What the compile found: the built tool and its earlier design differ in the two ways above; there are fourteen open questions in section 16, all mine. Claude Code did not run the collector, the audits or the sync for any counts in the document; they are quoted from the 2026-09-26 run files and the status report.
 - **Evidence and next step:** `SDD-job-search-project.md` in each folder; `lectern/sync.sh` in the master. Next: I read it, decide the open questions that matter first (a schedule, the five unreadable companies, and whether to build the state and diff or strike it from the earlier design), and the next film is built from this document.
 
+### 2026-10-10 — Assignment 1 worked example, drafted from the CV and the project record
+
+- **Date and what I was working on:** 2026-10-10. The Assignment 1 worked example for Branding and AI — professional introduction, skills inventory, Madison proposal, brand baseline and goals, tools setup — in `assignment-1/`, as markdown instead of the Figma board students submit.
+- **I tried / expected:** Professor Bear said: "use my CV and everything you know about the project so far to do assignment one for branding and AI, put it in the assignment one folder." I expected to draft, commit, and log in one pass.
+- **What happened:** Muse drafted all five files from the attested CV facts file (`facts/professor-bear-cv.json`) and the project record — the 58 kept postings for market awareness, the Madison repo's actual five-layer structure for the proposal. The first push attempt failed: the GitHub token returned 403 on every write while reads still worked — the fine-grained PAT had lost Contents write scope. Bear supplied a fresh token through the secure connect box; the retry pushed all five files. He has not reviewed the draft.
+- **What I did:** Wrote `assignment-1/` (README plus four part files), one commit per file; this entry is committed with the log update.
+- **What Claude or another person contributed:** Muse (this session) drafted everything; the Madison component choice (Intelligence Agents layer), the skills self-ratings, and the 176-word proposal are Muse's modeling of the example, not Bear's words. Bear supplied the CV and the direction.
+- **What I understand now / still do not understand:** The draft is deliberately honest where unverified — design systems rated 2/5, Jobscan/Canva/Adobe marked TODO. Still open: Bear's review of the draft.
+- **Evidence and next step:** `assignment-1/` in this folder, five commits. Next: Bear reviews; the A5 brief work continues.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -217,3 +227,9 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-09-26 | feat(fall-2026): company demand report — Anthropic 5/5; Google unreadable but verified by hand |
 | 2026-10-07 | docs(fall-2026): log the three-class sync check; nothing changed here |
 | 2026-10-07 | docs(fall-2026): add the project software design document, written by Gru in silent mode |
+| 2026-10-10 | feat(fall-2026): assignment 1 worked example — README |
+| 2026-10-10 | feat(fall-2026): assignment 1 worked example — part-1-introduction |
+| 2026-10-10 | feat(fall-2026): assignment 1 worked example — part-2-skills-inventory |
+| 2026-10-10 | feat(fall-2026): assignment 1 worked example — part-3-madison-proposal |
+| 2026-10-10 | feat(fall-2026): assignment 1 worked example — part-4-brand-baseline |
+| 2026-10-10 | docs(fall-2026): log the assignment-1 worked example in FRICTIONAL.md |
