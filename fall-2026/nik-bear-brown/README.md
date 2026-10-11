@@ -26,7 +26,7 @@ A place for the public work of Nik Bear Brown's examples — INFO 7375 Branding 
 | [`figma/`](figma/) | Figma's open jobs saved by date, the scan, the two relevant postings, and the Figma-only recipe |
 | [`greenhouse-watch-demo/`](greenhouse-watch-demo/) | The Reallocation Engine's job-board watcher run on Figma with Professor Bear's CV: what's new, what matches, and what the rules miss |
 | [`facts/`](facts/) | Professor Bear's CV as structured JSON, personal information removed, checked by him on 2026-09-23 |
-| [`assignment-3/`](assignment-3/) | The visual identity system: creative brief, `tokens.json`, generator, specimen, rationale |
+| [`build-your-data-pipeline/`](build-your-data-pipeline/) | The visual identity system: creative brief, `tokens.json`, generator, specimen, rationale |
 | [`FRICTIONAL.md`](FRICTIONAL.md) | The process log: what was tried, what went wrong, who did what, and every push |
 | [`CLAUDE.md`](CLAUDE.md) | Rules Claude Code follows in this folder |
 
@@ -137,6 +137,6 @@ As of 2026-09-26 there is a single folder for this work, matching the Computatio
 
 | Folder | What it is |
 |---|---|
-| [`assignment-2/`](assignment-2/) | The dream-job write-up, its three quoted requirements, and the machine reports it was chosen from in [`assignment-2/evidence/`](assignment-2/evidence/) |
+| [`plan-your-madison-project-like-a-pro/`](plan-your-madison-project-like-a-pro/) | The dream-job write-up, its three quoted requirements, and the machine reports it was chosen from in [`plan-your-madison-project-like-a-pro/evidence/`](plan-your-madison-project-like-a-pro/evidence/) |
 | [`advocate/`](advocate/) | The advocate-role portfolio: six advocate/educator roles across four companies, only one US-remote, plus [the narrowed Figma list](advocate/figma-advocate-roles.md) |
 | `brutalist-figma-claude/` | The Figma API practitioner book — its own GitHub repository, checked out here for convenience and **not committed from this repo** |
