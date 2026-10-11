@@ -247,6 +247,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** The brief's spine is "the role is never posted, so read interest, not openings" — and the differentiator writes itself from the gap all three competitors share. Still open: Bear's review, the filename, the unverified numbers.
 - **Evidence and next step:** `assignment-5/` in this folder, three commits. Next: Bear reviews; then Canvas submission by Oct 16, 11:59 PM.
 
+### 2026-10-10 — A5 brief rev.2: three research files folded in
+
+- **Date and what I was working on:** 2026-10-10, still the evening. Bear's workspace held three research files from the other conversation (`meta-education-product`, `training-failure-cases`, `competitor-check-scoutify-salesintel`, all dated today) that resolved open items in the brief I had just pushed. I folded them in rather than leaving the brief stale on arrival.
+- **I tried / expected:** Targeted edits, not a rewrite: the Meta resolution, the sharper Scoutify/HireSignal framing, one training-failure citation. Then regenerate the PDF and push.
+- **What happened:** Three edits: (1) Part 3's honest limits now resolve Meta — keep, VR-first, watch enablement/training/academy roles; (2) the "also evaluated" paragraph uses the research file's sharper framing (Scoutify proves the data is reachable; HireSignal is the honest challenge — sales tools read buying intent, Lectern reads pedagogy interest); (3) Part 6B's "why this matters" cites the Evelyn 11%→64% re-onboarding case as vendor-reported. PDF regenerated (7 pages) and both files pushed.
+- **What I did:** Edited, regenerated, pushed markdown + PDF; this entry committed with the log update.
+- **What Claude or another person contributed:** The three research files are from Bear's other conversation (Bear confirms the Meta resolution). Muse (this session) did the merge. Bear has not reviewed rev.2.
+- **What I understand now / still do not understand:** The brief is now current with everything on file. Still open: Bear's review, the Brown_Nik filename assumption, first-hand competitor trials.
+- **Evidence and next step:** `assignment-5/` in this folder. Next: Bear reviews; Canvas by Oct 16, 11:59 PM.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -291,3 +301,6 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-10 | feat(fall-2026): assignment 5 conductor brief — worked example |
 | 2026-10-10 | feat(fall-2026): assignment 5 conductor brief — PDF for Canvas submission |
 | 2026-10-10 | docs(fall-2026): log the assignment-5 conductor brief in FRICTIONAL.md |
+| 2026-10-10 | feat(fall-2026): assignment 5 brief rev.2 — Meta resolved, sharper Part 6 |
+| 2026-10-10 | feat(fall-2026): assignment 5 brief rev.2 — regenerated PDF |
+| 2026-10-10 | docs(fall-2026): log the A5 brief rev.2 in FRICTIONAL.md |
