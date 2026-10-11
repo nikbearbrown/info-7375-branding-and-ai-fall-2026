@@ -313,3 +313,13 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-11 | feat(fall-2026): assignment 5A worked example — Brown_Nik_A5A_WrapYourTool.pdf (7 pages) |
 | 2026-10-11 | feat(fall-2026): assignment 5A worked example — make_pdf.py (PDF build script) |
 | 2026-10-11 | docs(fall-2026): log the assignment-5A worked example in FRICTIONAL.md |
+| 2026-10-11 | refactor(fall-2026): rename assignment folders to Canvas assignment names (6bf6b51, 57 files, one atomic commit) |
+| 2026-10-11 | refactor(fall-2026): update internal links after the rename (11 files) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — README (status + honest limits) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — brand_config.json (valid JSON, 4 phase gates with judgment types) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — recipe_brown.md (four layers + standardization appendix) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — part-4-snickerdoodle.md (manual audit; Gru confirmation TODO) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — data/verified/ (greenhouse 53, ashby 34, smartrecruiters 10 + README) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — Brown_Nik_A5B_BuildTheRecipe.pdf (12 pages) |
+| 2026-10-11 | feat(fall-2026): assignment 6B worked example — make_pdf.py (PDF build script) |
+| 2026-10-11 | docs(fall-2026): log the rename + assignment-6B worked example in FRICTIONAL.md |
