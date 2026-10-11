@@ -20,7 +20,7 @@
 | `notion-jobs-i-am-keeping.md` | Technical Education Specialist (NYC, best description, wrong geography) and Developer Advocate (NYC/SF, four months old — check it is still real). |
 | `writer-jobs-i-am-keeping.md` | Senior AI learning designer, rapid content — hybrid at six hubs, explicitly *no AI-generated voice*, so I would be on camera myself. |
 | `canva-jobs-i-am-keeping.md` | Nothing kept — Canva's education roles are Sydney/APAC contracts. Kept as the record that I looked, and why to re-check monthly. |
-| *(Figma keep)* | The Designer Advocate keep card lives in [`../assignment-2/evidence/figma-jobs-i-am-keeping.md`](../assignment-2/evidence/figma-jobs-i-am-keeping.md) because it is the Assignment 2 dream job. |
+| *(Figma keep)* | The Designer Advocate keep card lives in [`../plan-your-madison-project-like-a-pro/evidence/figma-jobs-i-am-keeping.md`](../plan-your-madison-project-like-a-pro/evidence/figma-jobs-i-am-keeping.md) because it is the Assignment 2 dream job. |
 
 ## What the postings ask for, and what I will build here
 
