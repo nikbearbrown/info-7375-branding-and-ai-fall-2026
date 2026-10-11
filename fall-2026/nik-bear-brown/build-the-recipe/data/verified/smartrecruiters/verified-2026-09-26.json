@@ -1,0 +1,179 @@
+{
+ "source": "smartrecruiters",
+ "run_date": "2026-09-26",
+ "record_count": 10,
+ "quality_gate": "title+url+date+location+department present; deduplicated on source+native ID; kept by the teaching-interest filter with rule trace",
+ "records": [
+  {
+   "company": "Canva",
+   "title": "Account Executive, Higher Education",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001424458-account-executive-higher-education",
+   "location": "Austin, , United States",
+   "date_posted": "2026-09-21",
+   "department": "Sales / Go To Market",
+   "source": "smartrecruiters",
+   "source_id": "6000000001424458",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "education",
+    "teach",
+    "universities",
+    "university"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Account Executive, Higher Education (LATAM)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001424453-account-executive-higher-education-latam-",
+   "location": "Austin, , United States",
+   "date_posted": "2026-09-21",
+   "department": "Sales / Go To Market",
+   "source": "smartrecruiters",
+   "source_id": "6000000001424453",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "education",
+    "teach",
+    "universities",
+    "university"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Business Development Representative (Higher Education - Public Sector)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001375179-business-development-representative-higher-education-public-sector-",
+   "location": "Austin, TX, United States",
+   "date_posted": "2026-09-03",
+   "department": "Sales / Go To Market",
+   "source": "smartrecruiters",
+   "source_id": "6000000001375179",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "education",
+    "student",
+    "teach",
+    "universities"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Education Marketing Specialist - Indonesia (6-month contract)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001299549-education-marketing-specialist-indonesia-6-month-contract-",
+   "location": "Jakarta, Jakarta, Indonesia",
+   "date_posted": "2026-08-10",
+   "department": "Marketing / Marketing",
+   "source": "smartrecruiters",
+   "source_id": "6000000001299549",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "classroom",
+    "education",
+    "student"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Higher Education Account Executive",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001371584-higher-education-account-executive",
+   "location": "Sydney, NSW, Australia",
+   "date_posted": "2026-09-03",
+   "department": "Sales / Go To Market",
+   "source": "smartrecruiters",
+   "source_id": "6000000001371584",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "education",
+    "universities",
+    "university"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "International Growth Strategy Lead (Education)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001329699-international-growth-strategy-lead-education-",
+   "location": "Sydney, , Australia",
+   "date_posted": "2026-08-19",
+   "department": "Marketing / Growth",
+   "source": "smartrecruiters",
+   "source_id": "6000000001329699",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "classroom",
+    "education",
+    "higher ed",
+    "k-12"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "K-12 Education Account Manager Vietnam (12-Month Contract)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001319223-k-12-education-account-manager-vietnam-12-month-contract-",
+   "location": "Ho Chi Minh City, Ho Chi Minh, Vietnam",
+   "date_posted": "2026-08-17",
+   "department": "Sales / Go To Market",
+   "source": "smartrecruiters",
+   "source_id": "6000000001319223",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "classroom",
+    "curriculum",
+    "education",
+    "k-12",
+    "student"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Product Support Specialist, Education Team  (Full time, 1-year contract)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001287750-product-support-specialist-education-team-full-time-1-year-contract-",
+   "location": "Bengaluru, , India",
+   "date_posted": "2026-08-05",
+   "department": "Engineering",
+   "source": "smartrecruiters",
+   "source_id": "6000000001287750",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Program Manager: Education Content (FTC)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001399105-program-manager-education-content-ftc-",
+   "location": "Sydney, , Australia",
+   "date_posted": "2026-09-11",
+   "department": "Administrative / Product",
+   "source": "smartrecruiters",
+   "source_id": "6000000001399105",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "curriculum",
+    "education",
+    "education content",
+    "fixed term"
+   ]
+  },
+  {
+   "company": "Canva",
+   "title": "Project Manager, Education Team (Full time, 1-year contract)",
+   "url": "https://jobs.smartrecruiters.com/Canva/6000000001287015-project-manager-education-team-full-time-1-year-contract-",
+   "location": "Delhi, , India",
+   "date_posted": "2026-08-05",
+   "department": "Project Management",
+   "source": "smartrecruiters",
+   "source_id": "6000000001287015",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "k-12",
+    "student"
+   ]
+  }
+ ]
+}
