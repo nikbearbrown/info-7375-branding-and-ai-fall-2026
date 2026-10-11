@@ -25,31 +25,31 @@
 - `quality-report-2026-09-26.md` — counts, completeness, and what the audits changed
 - `title-audit-2026-09-26.md` + `reject-audit-2026-09-26.md` — the measurement, published
 
-**Proof output exists:** all four files are in `assignment-3/` in this repo, committed and readable on GitHub. Open the CSV in any spreadsheet app — no n8n, no JSON parsing, no technical skill required.
+**Proof output exists:** all four files are in `build-your-data-pipeline/` in this repo, committed and readable on GitHub. Open the CSV in any spreadsheet app — no n8n, no JSON parsing, no technical skill required.
 
 ## Output gallery
 
 ### 1. The demand report
 **Produced:** `company-demand-2026-09-26.md` — 18 companies ranked on five demand kinds, 57 signal roles, with a plain-language section on why Google's absence is a measurement gap, not a finding.
-**Where:** `assignment-3/` in this repo.
+**Where:** `build-your-data-pipeline/` in this repo.
 **Quality check:** a non-technical reader gets the answer ("which companies are hiring for education work?") on page one.
 
 ### 2. The kept-postings spreadsheet
 **Produced:** `jobs-of-interest-2026-09-26.csv` — 97 rows: company, title, location, URL, rule that fired, words that matched.
-**Where:** `assignment-3/`.
+**Where:** `build-your-data-pipeline/`.
 **Quality check:** opens in Excel/Sheets; every row links to the live posting.
 
 ### 3. The quality report
 **Produced:** `quality-report-2026-09-26.md` — counts (3,446 fetched, 97 kept, 0 duplicates, 100% complete), how the 97 were kept, what the audits changed.
-**Where:** `assignment-3/`.
+**Where:** `build-your-data-pipeline/`.
 
 ### 4. The title audit
 **Produced:** `title-audit-2026-09-26.md` — kept postings read by job function; 45 false positives named, 2 candidate misses flagged.
-**Where:** `assignment-3/`.
+**Where:** `build-your-data-pipeline/`.
 
 ### 5. The reject audit
 **Produced:** `reject-audit-2026-09-26.md` — 100 random rejects + 63 closest calls re-judged by hand; the sales-enablement correction.
-**Where:** `assignment-3/`.
+**Where:** `build-your-data-pipeline/`.
 
 ### 6. The Figma time-diff
 **Produced:** 23 new native IDs (including Designer Advocate, Berlin) and 32 gone, 2026-09-23 → 2026-10-08, computed from the snapshot and the run file.
@@ -66,28 +66,28 @@
 
 ### 9. The sources watch list
 **Produced:** `sources.json` — 18 boards, three ATSs, five unreachable companies with reasons.
-**Where:** `assignment-3/` and `lectern/`.
+**Where:** `build-your-data-pipeline/` and `lectern/`.
 
 ### 10. The keyword rules
 **Produced:** `keywords.json` + `title_families.json` — the classifier's actual rules, versioned.
-**Where:** `assignment-3/` and `lectern/`.
+**Where:** `build-your-data-pipeline/` and `lectern/`.
 
 ### 11. The ATS field guide
 **Produced:** `ATS.md` — which system each company uses, how to spot it, the feed URL pattern.
-**Where:** `assignment-3/` and `lectern/`.
+**Where:** `build-your-data-pipeline/` and `lectern/`.
 
 ### 12. The software design document
 **Produced:** `SDD-job-search-project.md` — sixteen sections on what was built, plus a seventeenth: where the design and the built code disagree.
-**Where:** `assignment-3/` and the master folder.
+**Where:** `build-your-data-pipeline/` and the master folder.
 
 ### 13. The demand-report script
 **Produced:** `demand_report.py` — the ranker itself, runnable.
-**Where:** `assignment-3/` and `lectern/`.
+**Where:** `build-your-data-pipeline/` and `lectern/`.
 
 ### 14. The audit scripts
 **Produced:** `audit_titles.py`, `audit_rejects.py` — the measurement tools, runnable.
-**Where:** `assignment-3/` and `lectern/`.
+**Where:** `build-your-data-pipeline/` and `lectern/`.
 
 ### 15. The collector
 **Produced:** `collect.py` — the six-step pipeline, stdlib only.
-**Where:** `assignment-3/` and `lectern/`.
+**Where:** `build-your-data-pipeline/` and `lectern/`.
