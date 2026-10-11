@@ -304,3 +304,12 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-10 | feat(fall-2026): assignment 5 brief rev.2 — Meta resolved, sharper Part 6 |
 | 2026-10-10 | feat(fall-2026): assignment 5 brief rev.2 — regenerated PDF |
 | 2026-10-10 | docs(fall-2026): log the A5 brief rev.2 in FRICTIONAL.md |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — README (status + Bear TODOs) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — app.py (working Gradio interface, real 2026-09-26 data) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — lectern_app_data.json (97 kept postings, compact) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — part-1-interface (walkthrough, verified states) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — part-2-user-testing (protocol + templates; sessions TODO, none invented) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — part-3-positioning (2x2 matrix + provisional one-thing) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — Brown_Nik_A5A_WrapYourTool.pdf (7 pages) |
+| 2026-10-11 | feat(fall-2026): assignment 5A worked example — make_pdf.py (PDF build script) |
+| 2026-10-11 | docs(fall-2026): log the assignment-5A worked example in FRICTIONAL.md |
