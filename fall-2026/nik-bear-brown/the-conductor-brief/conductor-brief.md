@@ -44,7 +44,7 @@ Every source below is a public, keyless JSON feed (the Assignment 3 collection).
 - **What it is:** JSON feed, one call per board with full ad text inline. The 2026-09-26 run [VERIFIED]: the majority of 3,446 postings across 18 boards.
 - **What it represents:** What design-tool and AI-lab companies are hiring for, in their own words — the demand signal itself. A new "Designer Advocate" posting is a company saying, in public, that teaching its tool matters enough to staff.
 - **How we know it is good:** Every record has a title, URL, date, location, and department (3,446/3,446 [VERIFIED]); field positions are asserted per board so a layout change fails loudly instead of writing blank titles; raw responses are saved untouched and dated.
-- **Local path:** `data/verified/lectern/all-jobs-YYYY-MM-DD.json` (convention; current files: `assignment-3/all-jobs-2026-09-26.json`, `lectern/runs/2026-10-08/all-jobs-2026-10-08.json`)
+- **Local path:** `data/verified/lectern/all-jobs-YYYY-MM-DD.json` (convention; current files: `build-your-data-pipeline/all-jobs-2026-09-26.json`, `lectern/runs/2026-10-08/all-jobs-2026-10-08.json`)
 
 ### Data Source 2 — Ashby posting API
 - **What it is:** JSON feed, one call per job board (board names URL-encoded). Part of the 3,446 postings [VERIFIED].
