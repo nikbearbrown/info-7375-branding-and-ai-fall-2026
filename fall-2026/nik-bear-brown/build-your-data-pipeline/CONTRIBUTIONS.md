@@ -2,7 +2,7 @@
 
 Who did what. Kept honest, including where Claude Code did the work and where it has not been reviewed.
 
-**Starting sources and licenses:** The live brief is Nina and Nik's "Build Your Data Pipeline — Collect Data for Your Madison Agent" (due 2026-10-02); the brief committed in this repo describes a different assignment, noted in [`README.md`](README.md). The problem comes from Assignment 2, in [`../assignment-2/`](../assignment-2/). The three APIs are public and keyless. Two existing pieces are reused rather than rewritten: the Reallocation Engine's `greenhouse-watch` skill (which already reads Greenhouse, Ashby, and SmartRecruiters) and [`../figma/find_roles.py`](../figma/find_roles.py) (the keyword scan). Both are my own prior work, and the record counts quoted in the README come from its 2026-09-19 run.
+**Starting sources and licenses:** The live brief is Nina and Nik's "Build Your Data Pipeline — Collect Data for Your Madison Agent" (due 2026-10-02); the brief committed in this repo describes a different assignment, noted in [`README.md`](README.md). The problem comes from Assignment 2, in [`../plan-your-madison-project-like-a-pro/`](../plan-your-madison-project-like-a-pro/). The three APIs are public and keyless. Two existing pieces are reused rather than rewritten: the Reallocation Engine's `greenhouse-watch` skill (which already reads Greenhouse, Ashby, and SmartRecruiters) and [`../figma/find_roles.py`](../figma/find_roles.py) (the keyword scan). Both are my own prior work, and the record counts quoted in the README come from its 2026-09-19 run.
 
 **What I personally attempted and built:** _nothing yet — the folder was created 2026-09-26 and the work starts live in class._
 
