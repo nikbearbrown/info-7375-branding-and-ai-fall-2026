@@ -2,7 +2,7 @@
 
 **Course:** INFO 7375 Branding and AI, Fall 2026 — Assignment 5
 **Author:** Nik Bear Brown (worked example)
-**Status:** Draft 2026-10-10. Numbers marked [VERIFIED] trace to committed run files; numbers marked [UNVERIFIED] come from an agent's uncommitted run log. Competitor notes are web research (product pages, independent reviews); first-hand trials are still owed.
+**Status:** Draft 2026-10-10 (rev. 2). Numbers marked [VERIFIED] trace to committed run files; numbers marked [UNVERIFIED] come from an agent's uncommitted run log. Competitor notes are web research (product pages, independent reviews); first-hand trials are still owed. Incorporates the 2026-10-10 research files on Meta's education product (resolved: keep), training-failure cases, and the Scoutify/sales-intel check.
 
 ---
 
@@ -58,7 +58,7 @@ Every source below is a public, keyless JSON feed (the Assignment 3 collection).
 - **How we know it is good:** Same record standard; the paging loop is verified to emit no duplicates across pages.
 - **Local path:** `data/verified/lectern/` (same convention; same run files)
 
-**What the contract does not cover (honest limits):** Adobe (Workday) and Framer (hand-built pages) have no public feed — absence from the data is labeled a measurement gap, never read as "no demand." Amazon's API reports a round `hits: 10000` that the collector trusts but cannot verify [UNVERIFIED whether it's a cap]. Big-four collector runs (Google/Amazon/Microsoft) exist only in uncommitted run logs [UNVERIFIED].
+**What the contract does not cover (honest limits):** Adobe (Workday) and Framer (hand-built pages) have no public feed — absence from the data is labeled a measurement gap, never read as "no demand." Amazon's API reports a round `hits: 10000` that the collector trusts but cannot verify [UNVERIFIED whether it's a cap]. Big-four collector runs (Google/Amazon/Microsoft) exist only in uncommitted run logs [UNVERIFIED]. Meta stays on the watch list: Meta for Education (VR program, generally available) plus the AI Academy Kenya and the AI Learning Alliance give it a real education footprint — though its play is VR-first, so the signal to watch there is enablement/training/academy roles, not AI-assistant roles.
 
 ---
 
@@ -115,7 +115,7 @@ Bad looks like: a rule keeps 101 postings at ~1-in-10 precision (this actually h
 - **Where they fall short for our user:** The intel answers "where should I work," not "who cares about teaching." No education taxonomy, no per-claim traceability, and the demand lens is tech-wide rather than teaching-specific.
 - **Source:** Web research — trueup.io product pages. First-hand trial not yet done.
 
-**Also evaluated (not counted among the three):** *Scoutify* — real-time push alerts from 70,000+ career pages ($5/week); the fastest alerts in the category, still seeker-oriented. *HireSignal* (open-source MCP server) — turns postings into B2B buying signals ("which fintechs posted RevOps roles this week?"); the closest in spirit, but built for sales prospecting — *who's in-market* — with no education-interest taxonomy and no published reject reasoning.
+**Also evaluated (not counted among the three):** *Scoutify* (scoutify.com) — watches 70,000+ company career pages directly (Greenhouse, Lever, Ashby, Workday, SmartRecruiters — the same plumbing Lectern uses) and pushes alerts within ~5–15 minutes; $5/week for alerts, more for auto-apply. The cleanest comparison in the set: it proves the data is reachable, but treats every listing as something to *apply to*, never as evidence of what the company cares about. *HireSignal* (open-source MCP server) — turns postings into B2B buying signals ("which fintechs posted RevOps roles this week?" → in-market for CRM tooling), claiming the signal surfaces 60–90 days before vendor research starts. This is the honest challenge to the "one thing": sales-intel tools *do* read listings as evidence of company interest — but for *purchasing* intent, aimed at sales teams. Lectern reads a subset sales tools don't parse (teaching-related hiring: customer education, enablement, training, academy roles) as evidence of interest in *pedagogy* — a question nobody in that category answers.
 
 **The gap all three share:** Every one of them treats a listing as *an opening to apply to*. None reads the board as *evidence of what the company cares about*, and none shows its work — there is no reject list, no rule trace, no way to verify a claim except to trust the tool.
 
@@ -123,7 +123,7 @@ Bad looks like: a rule keeps 101 postings at ~1-in-10 precision (this actually h
 
 **Lectern is the only job-board reader that turns listings into checkable evidence of a company's interest in teaching, for the independent education consultant, without asking them to pretend to be a job seeker.**
 
-- **Why this matters to our user:** The role they want is almost never posted. A tool that only finds openings is useless to them; a tool that reads *interest* — with the timing to act on it — is the entire pitch strategy.
+- **Why this matters to our user:** The role they want is almost never posted. A tool that only finds openings is useless to them; a tool that reads *interest* — with the timing to act on it — is the entire pitch strategy. And the interest is real: when one AI-tutoring deployment added structured educator onboarding, student engagement went from 11% to 64% with the same product (vendor-reported case) — the gap is training, not the tool, which is exactly what the consultant is selling.
 - **Why this is defensible:** Three things a competitor can't copy in a week: (1) the education-specific taxonomy (title families, the teaching-materials rule) built from 3,446 real postings and two audits; (2) the audit loop that measures the filter and publishes its misses — 45 false positives fixed, on the record; (3) native-ID traceability from every claim back to the raw board response. A filter is a weekend; a *verifiable* filter is a practice.
 
 ---
