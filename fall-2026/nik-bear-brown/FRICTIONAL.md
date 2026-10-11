@@ -237,6 +237,16 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** A4's story is "A3 collected, A4 understood" — and the audit loop is the closest thing here to learning. Still open: Bear's review.
 - **Evidence and next step:** `assignment-4/` in this folder, five commits. Next: Bear reviews; the A5 brief remains the big open item (due Oct 16).
 
+### 2026-10-10 — Assignment 5 conductor brief: full draft + PDF
+
+- **Date and what I was working on:** 2026-10-10, late evening. The A5 Conductor Brief — all six parts — as `assignment-5/conductor-brief.md`, plus the Canvas-ready PDF `assignment-5/Brown_Nik_A5_ConductorBrief.pdf` (7 pages, generated with fpdf2 since the VM has no pandoc).
+- **I tried / expected:** Professor Bear pasted the A5 brief and said "do this one?" I expected to synthesize A1–A4 into the strategic brief, research the competitors for real, and ship both markdown and PDF.
+- **What happened:** Muse drafted all six parts from the project record and the other conversation's framing (Part 1: the independent-consultant sentence). Researched five competitors for Part 6 — LinkedIn Job Alerts, HiringCafe, TrueUp as the three, with Scoutify and HireSignal evaluated as comparators; all web research, no first-hand trials yet, stated honestly. Every number is marked [VERIFIED] (committed run files) or [UNVERIFIED] (uncommitted run logs); the Amazon 10,000 question and Meta's education product are open, not papered over. Three pushes, no errors.
+- **What I did:** Wrote the brief, generated and visually checked the PDF (7 pages, clean), pushed both, this entry committed with the log update.
+- **What Claude or another person contributed:** Muse (this session) did the research, the draft, and the PDF. Bear has not reviewed the draft. Two things need him: (1) the filename assumes LastName_FirstName = Brown_Nik — confirm before Canvas; (2) the [UNVERIFIED] numbers and the Meta question are his calls.
+- **What I understand now / still do not understand:** The brief's spine is "the role is never posted, so read interest, not openings" — and the differentiator writes itself from the gap all three competitors share. Still open: Bear's review, the filename, the unverified numbers.
+- **Evidence and next step:** `assignment-5/` in this folder, three commits. Next: Bear reviews; then Canvas submission by Oct 16, 11:59 PM.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -278,3 +288,6 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-10 | feat(fall-2026): assignment 4 worked example — part-3-scale |
 | 2026-10-10 | feat(fall-2026): assignment 4 worked example — part-4-package |
 | 2026-10-10 | docs(fall-2026): log the assignment-4 worked example in FRICTIONAL.md |
+| 2026-10-10 | feat(fall-2026): assignment 5 conductor brief — worked example |
+| 2026-10-10 | feat(fall-2026): assignment 5 conductor brief — PDF for Canvas submission |
+| 2026-10-10 | docs(fall-2026): log the assignment-5 conductor brief in FRICTIONAL.md |
