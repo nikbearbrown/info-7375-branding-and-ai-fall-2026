@@ -18,8 +18,8 @@
 |---|---|---|
 | **This page** — Figma Advocate roles only | Which Figma jobs are the job I want? | 3 (+5 neighbours) |
 | [`advocate-roles-2026-09-19.md`](advocate-roles-2026-09-19.md) | Which Advocate/educator roles exist across all seven companies? | 6 roles / 4 companies |
-| [`../assignment-2/evidence/figma-jobs-i-am-keeping.md`](../assignment-2/evidence/figma-jobs-i-am-keeping.md) | Which Figma job did I keep, and why? (Assignment 2 Part 1) | 1 |
-| [`../assignment-2/evidence/greenhouse-watch-figma-report.md`](../assignment-2/evidence/greenhouse-watch-figma-report.md) | Which of the 152 Figma postings mention words on my CV? (tentative, unreviewed) | 55 of 152 |
+| [`../plan-your-madison-project-like-a-pro/evidence/figma-jobs-i-am-keeping.md`](../plan-your-madison-project-like-a-pro/evidence/figma-jobs-i-am-keeping.md) | Which Figma job did I keep, and why? (Assignment 2 Part 1) | 1 |
+| [`../plan-your-madison-project-like-a-pro/evidence/greenhouse-watch-figma-report.md`](../plan-your-madison-project-like-a-pro/evidence/greenhouse-watch-figma-report.md) | Which of the 152 Figma postings mention words on my CV? (tentative, unreviewed) | 55 of 152 |
 | Engine: `reports/greenhouse-watch/figma-2026-09-19-ALL.md` ([repo](https://github.com/nikbearbrown/the-reallocation-engine/tree/main/reports/greenhouse-watch)) | Every Figma posting, one card each | 152 |
 
 ## The three Advocate roles
@@ -39,7 +39,7 @@
 
 **What the job is.** Written, visual, and video resources on how modern teams design and build; relationships and user-driven initiatives in the Figma community; regular talks at meetups and conferences; carrying community feedback back into product; working alongside Sales and Customer Experience. Wants hands-on depth in Figma, design systems, tokens, AI-assisted design, and prototyping; public-speaking comfort; up to 25% travel.
 
-**Why I keep it.** It is my Assignment 2 dream job — the reasoning is in [Part 1](../assignment-2/part-1-dream-job.md). Short version: the job is what I already do, at the company whose tool my students use; the gap is Figma design-systems depth and the hub requirement.
+**Why I keep it.** It is my Assignment 2 dream job — the reasoning is in [Part 1](../plan-your-madison-project-like-a-pro/part-1-dream-job.md). Short version: the job is what I already do, at the company whose tool my students use; the gap is Figma design-systems depth and the hub requirement.
 
 ### Designer Advocate, Partnerships — **consider**
 
