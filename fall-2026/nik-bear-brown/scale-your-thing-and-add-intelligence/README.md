@@ -4,7 +4,7 @@
 
 **What this is.** Professor Bear's worked example for Assignment 4 of INFO 7375 Branding and AI (Fall 2026): the intelligence layer on top of Assignment 3's data pipeline, the usable outputs it produces, honest scale numbers, and the interview-ready package — in markdown instead of a Figma board.
 
-**Why read it.** Assignment 3 collected the data; this one makes it smart and proves it. The intelligence here isn't a chatbot bolted on — it's the classifier that decides keep/reject with reasons, the demand ranker that turns postings into company rankings, and the audit loop that measured the filter and fixed it. Every claim below traces to a file in `assignment-3/` or `lectern/`.
+**Why read it.** Assignment 3 collected the data; this one makes it smart and proves it. The intelligence here isn't a chatbot bolted on — it's the classifier that decides keep/reject with reasons, the demand ranker that turns postings into company rankings, and the audit loop that measured the filter and fixed it. Every claim below traces to a file in `build-your-data-pipeline/` or `lectern/`.
 
 **What changed from Assignment 3.** A3 fetched and saved. A4 classifies (three rules, every verdict explained), ranks (five demand kinds per company), diffs over time (the Figma 23-new/32-gone), and measures itself (two audits). The outputs are human-readable reports, not JSON dumps.
 
