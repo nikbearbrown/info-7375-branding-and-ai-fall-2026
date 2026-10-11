@@ -1,0 +1,821 @@
+{
+ "source": "greenhouse",
+ "run_date": "2026-09-26",
+ "record_count": 53,
+ "quality_gate": "title+url+date+location+department present; deduplicated on source+native ID; kept by the teaching-interest filter with rule trace",
+ "records": [
+  {
+   "company": "Anthropic",
+   "title": "BDR Enablement Lead",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390984008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-08-19",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5390984008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "education",
+    "enablement",
+    "teach"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Cloud Partner Enablement Lead",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5369181008",
+   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+   "date_posted": "2026-07-24",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5369181008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Community Engagement Manager, Data Centers (Texas)",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391983008",
+   "location": "Austin, TX | Remote-Friendly, United States",
+   "date_posted": "2026-08-19",
+   "department": "Public Policy",
+   "source": "greenhouse",
+   "source_id": "5391983008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community",
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Community Engagement Manager, Data Centres (Australia)",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391999008",
+   "location": "Sydney, Australia | Remote-Friendly, Australia",
+   "date_posted": "2026-08-19",
+   "department": "Public Policy",
+   "source": "greenhouse",
+   "source_id": "5391999008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community",
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Community Engagement Manager, Data Centres (Canada)",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391974008",
+   "location": "Alberta, CAN | Remote-Friendly, Canada",
+   "date_posted": "2026-08-19",
+   "department": "Public Policy",
+   "source": "greenhouse",
+   "source_id": "5391974008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community",
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Developer Education Lead, Claude Platform",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5311465008",
+   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+   "date_posted": "2026-07-10",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5311465008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "developer education",
+    "education",
+    "teach"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Developer Relations",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5383596008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-08-10",
+   "department": "Engineering & Design - Product",
+   "source": "greenhouse",
+   "source_id": "5383596008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "developer relations",
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Full Stack Engineer, Education Labs",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
+   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+   "date_posted": "2026-01-27",
+   "department": "Technical Education",
+   "source": "greenhouse",
+   "source_id": "5097186008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "GTM Enablement Trainer, Claude Products",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5428790008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-09-22",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5428790008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "enablement",
+    "teach",
+    "trainer"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Head of APAC GTM Enablement",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5426627008",
+   "location": "Singapore",
+   "date_posted": "2026-09-21",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5426627008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Head of Community, Enterprise Marketing",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5388719008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-08-13",
+   "department": "Marketing & Brand",
+   "source": "greenhouse",
+   "source_id": "5388719008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community",
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Head of Technical Training",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5415529008",
+   "location": "San Francisco, CA",
+   "date_posted": "2026-09-04",
+   "department": "Technical Education",
+   "source": "greenhouse",
+   "source_id": "5415529008",
+   "kept_because": "4 topic words in body (>= 3)",
+   "matched_words": [
+    "classroom",
+    "curriculum",
+    "education",
+    "teach"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Head of Vulnerability Disclosure & Security Community",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5397699008",
+   "location": "San Francisco, CA | New York City, NY | Washington, DC",
+   "date_posted": "2026-08-20",
+   "department": "Safeguards (Trust & Safety)",
+   "source": "greenhouse",
+   "source_id": "5397699008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community",
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Lead Technical Instructor",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5415537008",
+   "location": "New York City, NY",
+   "date_posted": "2026-09-04",
+   "department": "Technical Education",
+   "source": "greenhouse",
+   "source_id": "5415537008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "classroom",
+    "curriculum",
+    "education",
+    "instructor",
+    "teach"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Partner Enablement Lead, System Integrators",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5188391008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-04-14",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5188391008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Partnership Manager, AI for Science",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5407938008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-08-28",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5407938008",
+   "kept_because": "3 topic words in body (>= 3)",
+   "matched_words": [
+    "education",
+    "student",
+    "universities"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Research & Education Sales Lead, Beneficial Deployments",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5415930008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-09-04",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5415930008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "campus",
+    "education",
+    "universities",
+    "university"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Reseller Enablement Lead",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391269008",
+   "location": "London, UK",
+   "date_posted": "2026-08-28",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5391269008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Safeguards Enforcement Analyst, Conventional Weapons",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5410006008",
+   "location": "San Francisco, CA | New York City, NY | Washington, DC",
+   "date_posted": "2026-09-01",
+   "department": "Safeguards (Trust & Safety)",
+   "source": "greenhouse",
+   "source_id": "5410006008",
+   "kept_because": "body says it produces teaching materials for a named audience",
+   "matched_words": [
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Sales Enablement Lead, GTM Onboarding",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390972008",
+   "location": "San Francisco, CA",
+   "date_posted": "2026-09-01",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5390972008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Sales Leader Enablement",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390960008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-08-20",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5390960008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Scaled Enablement Programs Lead",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391146008",
+   "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+   "date_posted": "2026-09-18",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5391146008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Software Engineer, Education",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5389305008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-08-13",
+   "department": "Technical Education",
+   "source": "greenhouse",
+   "source_id": "5389305008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Technical Architect",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5421566008",
+   "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY",
+   "date_posted": "2026-09-11",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5421566008",
+   "kept_because": "3 topic words in body (>= 3)",
+   "matched_words": [
+    "educate",
+    "education",
+    "teach"
+   ]
+  },
+  {
+   "company": "Anthropic",
+   "title": "Technical Documentation and Content Engineer, Claude Docs",
+   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5370615008",
+   "location": "San Francisco, CA | New York City, NY",
+   "date_posted": "2026-07-24",
+   "department": "Technical Education",
+   "source": "greenhouse",
+   "source_id": "5370615008",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "content engineer",
+    "docs",
+    "documentation",
+    "education"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Customer Enablement Manager (Berlin, Germany)",
+   "url": "https://boards.greenhouse.io/figma/jobs/6133181004?gh_jid=6133181004",
+   "location": "Berlin, Germany",
+   "date_posted": "2026-08-04",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "6133181004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Customer Enablement Manager (London, United Kingdom)",
+   "url": "https://boards.greenhouse.io/figma/jobs/6130557004?gh_jid=6130557004",
+   "location": "London, England",
+   "date_posted": "2026-07-30",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "6130557004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Customer Enablement Manager (Paris, France)",
+   "url": "https://boards.greenhouse.io/figma/jobs/5976498004?gh_jid=5976498004",
+   "location": "Paris, France",
+   "date_posted": "2026-04-21",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "5976498004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Customer Enablement Manager (S\u00e3o Paulo, Brazil)",
+   "url": "https://boards.greenhouse.io/figma/jobs/6104028004?gh_jid=6104028004",
+   "location": "S\u00e3o Paulo, Brazil",
+   "date_posted": "2026-07-06",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "6104028004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Designer Advocate",
+   "url": "https://boards.greenhouse.io/figma/jobs/6176134004?gh_jid=6176134004",
+   "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+   "date_posted": "2026-09-01",
+   "department": "Marketing",
+   "source": "greenhouse",
+   "source_id": "6176134004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "advocate",
+    "designer advocate"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Designer Advocate (Berlin, Germany)",
+   "url": "https://boards.greenhouse.io/figma/jobs/6203089004?gh_jid=6203089004",
+   "location": "Berlin, Germany",
+   "date_posted": "2026-09-24",
+   "department": "Marketing",
+   "source": "greenhouse",
+   "source_id": "6203089004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "advocate",
+    "designer advocate"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Designer Advocate, Partnerships",
+   "url": "https://boards.greenhouse.io/figma/jobs/6114301004?gh_jid=6114301004",
+   "location": "San Francisco, CA",
+   "date_posted": "2026-07-13",
+   "department": "Marketing",
+   "source": "greenhouse",
+   "source_id": "6114301004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "advocate",
+    "designer advocate",
+    "educate"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Manager, Customer Enablement (Tokyo, Japan)",
+   "url": "https://boards.greenhouse.io/figma/jobs/6144873004?gh_jid=6144873004",
+   "location": "Tokyo, Japan",
+   "date_posted": "2026-08-17",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "6144873004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Figma",
+   "title": "Senior Field Enablement Manager (Tokyo, Japan)",
+   "url": "https://boards.greenhouse.io/figma/jobs/6003308004?gh_jid=6003308004",
+   "location": "Tokyo, Japan",
+   "date_posted": "2026-05-26",
+   "department": "Sales",
+   "source": "greenhouse",
+   "source_id": "6003308004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "GitLab",
+   "title": "Public Sector Enablement Lead",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8814596002",
+   "location": "Remote, United States",
+   "date_posted": "2026-09-17",
+   "department": "Enablement",
+   "source": "greenhouse",
+   "source_id": "8814596002",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "educate",
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "GitLab",
+   "title": "Senior Backend Engineer, Platform Enablement",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8750842002",
+   "location": "Remote, United States",
+   "date_posted": "2026-09-18",
+   "department": "Platforms Engineering",
+   "source": "greenhouse",
+   "source_id": "8750842002",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "education",
+    "enablement"
+   ]
+  },
+  {
+   "company": "GitLab",
+   "title": "Senior Developer Advocate",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8838202002",
+   "location": "Remote, Canada; Remote, United States",
+   "date_posted": "2026-09-23",
+   "department": "Developer Relations",
+   "source": "greenhouse",
+   "source_id": "8838202002",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "advocate",
+    "developer advocate",
+    "education"
+   ]
+  },
+  {
+   "company": "HubSpot",
+   "title": "Academy Professor, French & Portuguese",
+   "url": "https://www.hubspot.com/careers/jobs/8185547?gh_jid=8185547",
+   "location": "Remote - Ireland",
+   "date_posted": "2026-09-25",
+   "department": "Scaled CS",
+   "source": "greenhouse",
+   "source_id": "8185547",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "academy",
+    "education",
+    "workshop"
+   ]
+  },
+  {
+   "company": "Netlify",
+   "title": "Your Chance to Join Our Talent Community!",
+   "url": "https://job-boards.greenhouse.io/netlify/jobs/4224129002",
+   "location": "Remote",
+   "date_posted": "2019-03-05",
+   "department": "G&A",
+   "source": "greenhouse",
+   "source_id": "4224129002",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Compliance Manager, User Enablement",
+   "url": "https://stripe.com/jobs/search?gh_jid=7530580",
+   "location": "Dublin OR London",
+   "date_posted": "2026-01-14",
+   "department": "3311 FinCRO",
+   "source": "greenhouse",
+   "source_id": "7530580",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Manager, Go-to-Market Enablement Business Partners",
+   "url": "https://stripe.com/jobs/search?gh_jid=8212674",
+   "location": "San Francisco",
+   "date_posted": "2026-09-18",
+   "department": "1512 Global Sales Enablement",
+   "source": "greenhouse",
+   "source_id": "8212674",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Product Compliance and Enablement Manager",
+   "url": "https://stripe.com/jobs/search?gh_jid=8003129",
+   "location": "London, Dublin",
+   "date_posted": "2026-06-12",
+   "department": "3311 FinCRO",
+   "source": "greenhouse",
+   "source_id": "8003129",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Product Sales Enablement Business Partner",
+   "url": "https://stripe.com/jobs/search?gh_jid=7994063",
+   "location": "US-San Francisco",
+   "date_posted": "2026-06-24",
+   "department": "1512 Global Sales Enablement",
+   "source": "greenhouse",
+   "source_id": "7994063",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Program Manager, Risk Operations GTM Enablement",
+   "url": "https://stripe.com/jobs/search?gh_jid=8209641",
+   "location": "Dublin, Ireland",
+   "date_posted": "2026-09-23",
+   "department": "4892 Risk Operations Enablement",
+   "source": "greenhouse",
+   "source_id": "8209641",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Program Manager, Risk Operations GTM Enablement",
+   "url": "https://stripe.com/jobs/search?gh_jid=8158082",
+   "location": "United States",
+   "date_posted": "2026-08-25",
+   "department": "4892 Risk Operations Enablement",
+   "source": "greenhouse",
+   "source_id": "8158082",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "enablement"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Senior Software Engineer, Docs Product",
+   "url": "https://stripe.com/jobs/search?gh_jid=8177860",
+   "location": "New York, NY",
+   "date_posted": "2026-09-03",
+   "department": "Global Operations",
+   "source": "greenhouse",
+   "source_id": "8177860",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "docs"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Short-form Video & Social, Community Comms",
+   "url": "https://stripe.com/jobs/search?gh_jid=7373865",
+   "location": "SF, NYC",
+   "date_posted": "2025-11-11",
+   "department": "2413 Communications",
+   "source": "greenhouse",
+   "source_id": "7373865",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "community"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "Training Program Manager",
+   "url": "https://stripe.com/jobs/search?gh_jid=8172111",
+   "location": "Mexico City",
+   "date_posted": "2026-09-03",
+   "department": "1512 Global Sales Enablement",
+   "source": "greenhouse",
+   "source_id": "8172111",
+   "kept_because": "body says it produces teaching materials for a named audience",
+   "matched_words": [
+    "classroom"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "University Recruiter",
+   "url": "https://stripe.com/jobs/search?gh_jid=8226211",
+   "location": "San Francisco, New York, Seattle, US-Remote",
+   "date_posted": "2026-09-23",
+   "department": "6526 University Recruiting",
+   "source": "greenhouse",
+   "source_id": "8226211",
+   "kept_because": "4 topic words in body (>= 3)",
+   "matched_words": [
+    "campus",
+    "education",
+    "fixed term",
+    "student",
+    "university"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "University Recruiter",
+   "url": "https://stripe.com/jobs/search?gh_jid=8128011",
+   "location": "Dublin, London",
+   "date_posted": "2026-08-19",
+   "department": "6526 University Recruiting",
+   "source": "greenhouse",
+   "source_id": "8128011",
+   "kept_because": "4 topic words in body (>= 3)",
+   "matched_words": [
+    "campus",
+    "education",
+    "fixed term",
+    "student",
+    "university"
+   ]
+  },
+  {
+   "company": "Stripe",
+   "title": "University Recruiter",
+   "url": "https://stripe.com/jobs/search?gh_jid=8159355",
+   "location": "N/A",
+   "date_posted": "2026-09-10",
+   "department": "6526 University Recruiting",
+   "source": "greenhouse",
+   "source_id": "8159355",
+   "kept_because": "4 topic words in body (>= 3)",
+   "matched_words": [
+    "campus",
+    "education",
+    "student",
+    "university"
+   ]
+  },
+  {
+   "company": "Vercel",
+   "title": "DevRel Engineer, Agentic Infrastructure",
+   "url": "https://job-boards.greenhouse.io/vercel/jobs/6122437004",
+   "location": "Hybrid - San Francisco, New York City, Austin",
+   "date_posted": "2026-07-22",
+   "department": "Engineering",
+   "source": "greenhouse",
+   "source_id": "6122437004",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "devrel",
+    "teach"
+   ]
+  },
+  {
+   "company": "Webflow",
+   "title": "Senior Developer Educator",
+   "url": "https://job-boards.greenhouse.io/webflow/jobs/8204002",
+   "location": "San Francisco, CA (Hybrid); U.S. Remote",
+   "date_posted": "2026-09-15",
+   "department": "Education",
+   "source": "greenhouse",
+   "source_id": "8204002",
+   "kept_because": "role word in title",
+   "matched_words": [
+    "curriculum",
+    "education",
+    "educator",
+    "fixed term",
+    "temporary",
+    "university"
+   ]
+  }
+ ]
+}
