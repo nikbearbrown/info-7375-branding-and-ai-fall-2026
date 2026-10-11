@@ -37,7 +37,7 @@ The live Assignment 3 is **"Build Your Data Pipeline — Collect Data for Your M
 
 **Problem:** I am looking for advocate, educator, or education-adjacent work I can do while remaining a professor — remote, part-time, contract, or workshop-based. The companies whose tools I teach are the obvious place to look, and their job boards are public. Nobody is going to email me when a part-time Developer Educator opens at Webflow.
 
-**From Assignment 2:** the dream job is a Figma Designer Advocate posting, and the gap analysis is [`../assignment-2/`](../assignment-2/). The seven-company sweep is in [`../advocate/`](../advocate/).
+**From Assignment 2:** the dream job is a Figma Designer Advocate posting, and the gap analysis is [`../plan-your-madison-project-like-a-pro/`](../plan-your-madison-project-like-a-pro/). The seven-company sweep is in [`../advocate/`](../advocate/).
 
 ## Requirements checklist
 
