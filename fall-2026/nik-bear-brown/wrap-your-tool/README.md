@@ -18,7 +18,7 @@
 
 - `app.py` — the working Gradio interface. Run: `python3 app.py` → http://127.0.0.1:7860
 - `lectern_app_data.json` — compact extract (97 kept postings, 2026-09-26 run) the app reads.
-  Full file: `assignment-3/jobs-of-interest-2026-09-26.json`.
+  Full file: `build-your-data-pipeline/jobs-of-interest-2026-09-26.json`.
 - `part-1-interface.md` — walkthrough (URL, fields, output, design decision, error handling).
 - `part-2-user-testing.md` — test protocol, note template, tester criteria. Sessions are TODO.
 - `part-3-positioning.md` — 2×2 matrix, placements, white space, revised one-thing (provisional).
