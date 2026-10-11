@@ -18,7 +18,7 @@ info-7375-computational-skepticism-for-ai/fall-2026/nik-bear-brown/
 
 | File | Where it is in this repo | Canonical location |
 |---|---|---|
-| `collect.py` · `sources.json` · `keywords.json` · `ATS.md` | `assignment-3/` (it is the graded submission for this class) | master's `lectern/` |
+| `collect.py` · `sources.json` · `keywords.json` · `ATS.md` | `build-your-data-pipeline/` (it is the graded submission for this class) | master's `lectern/` |
 | `facts/professor-bear-cv.json` | `facts/` | master's `facts/` |
 | `figma/` · `greenhouse-watch-demo/` | same paths | same paths in the master |
 
