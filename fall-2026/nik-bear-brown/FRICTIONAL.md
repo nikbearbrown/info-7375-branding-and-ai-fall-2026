@@ -8,6 +8,8 @@
 
 **What it records so far.** One session, 2026-09-26, during a live class demo: setting this folder up, bringing the Figma dream-job recipe over from the Prompt Engineering class, and consolidating everything of the instructor's into this one folder. No Assignment 3 work has started yet — that folder is a place to work, not a result. Two findings were about the repository rather than the assignment: `fall-2026/` was blocked by a `.gitignore` rule, so anything put there would have pushed nothing with no error; and the instructor's work existed in two places at once, which is not how the other two classes are laid out.
 
+**Most recent entry (2026-10-17).** Rough drafts for the Canvas assignments that had no worked example (7–11, midterm, final, participation, TRACE), indexed in `ASSIGNMENTS.md`. They are unreviewed: they show which assignments the existing work can answer and which need artifacts that do not exist yet.
+
 Every push to GitHub is listed at the bottom with its date and commit note.
 
 ---
@@ -257,6 +259,22 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** The brief is now current with everything on file. Still open: Bear's review, the Brown_Nik filename assumption, first-hand competitor trials.
 - **Evidence and next step:** `assignment-5/` in this folder. Next: Bear reviews; Canvas by Oct 16, 11:59 PM.
 
+### 2026-10-17 — Rough drafts for the assignments that had none: 7–11, midterm, final, participation, TRACE
+
+- **Date and what I was working on:** 2026-10-17. Drafting an answer to every assignment in the Canvas course for INFO 7375 Branding and AI, section 05, from an export of the course, then reconciling the drafts with worked examples already on GitHub.
+- **I tried / expected:** I attached the Canvas export and asked: *"can you see the assingments?"* Then: *"I want you to do a rough draft of ALL of the assignments ... in lower kebab case with the name of the assignment as the folder name 1: Course Introduction & Foundation Setup would be a folder in kebab case"*. I expected a folder per assignment with something usable in each. When the drafts were done I said: *"Push them to GitHub, with the FRICTIONAL push row."*
+- **What happened:**
+  - **The export held 16 items:** Assignments 1–5, 6A, 6B, 7–11, the Midterm, the Final Exam, the SEIS guest-speaker participation assignment and the TRACE extra credit. Eight are published in Canvas; the rest are unpublished.
+  - **The first push was rejected.** GitHub already held 59 newer commits: worked examples for Assignments 1–6B (written 2026-10-10 and 2026-10-11) and a rename of the assignment folders to Canvas titles without the "Assignment N:" prefix. My first set of drafts for 1–6B duplicated that work, and my first folder names (`assignment-N-…`) did not follow its convention. Nothing was pushed.
+  - **My decision:** *"Rebase onto origin, drop my duplicate drafts for 1 through 6B, rename the rest to the remote's folder convention, and push only 7-11, midterm, final, participation and TRACE with a merged FRICTIONAL entry and push row."*
+  - **What could be drafted from records:** the stories and articles in 10 and 11, because the job-search work already has numbers, audits and a log behind it. **What could not:** 7's trademark, domain and portfolio research (lookups nobody has done), 8 and 9 (design and build work), and the Assignment 11 reflection, the participation questions and the TRACE survey, which are his. Those are typed TODOs.
+  - **The Canvas text has errors:** stale assignment numbers in 8, 9 and 11; summer-term dates in the Midterm, Final and TRACE text; and a Midterm whose slide timings add up to 8:20, over its own 8-minute cap. They are listed in `ASSIGNMENTS.md`.
+  - **A positioning split surfaced:** the Assignment 1 and 5 worked examples describe an independent AI-education evaluator or consultant; the Assignment 7 draft reads more like a course-and-materials builder. It is flagged in the Assignment 7 draft and in `ASSIGNMENTS.md` for him to resolve.
+- **What I did:** Asked for the drafts, then chose how to reconcile them with what was on GitHub (above). I have not reviewed the drafts.
+- **What Claude or another person contributed:** Claude Code read all 16 assignment pages, the facts file, the logs and the existing worked examples, and wrote `ASSIGNMENTS.md` and a `README.md` in each of nine folders: `personal-startup-brand-strategy-and-madison-tool-naming/`, `building-the-visual-foundation-of-your-brand/`, `brand-aligned-digital-presence/`, `brand-storytelling-and-content-strategy/`, `show-your-work-substack-as-a-brand-platform/`, `midterm-present-your-madison-framework-pitch-deck/`, `final-exam-brand-portfolio-presentation/`, `participation-assignment-seis-guest-speaker-series/` and `extra-credit-opportunity-mid-semester-trace-survey/`. Claude Code also wrote first drafts for 1–6B, which were dropped as duplicates and are not on GitHub. Every judgment is labeled as Claude's draft. Claude Code ran no collector, audit, scale test, user test or search, and no number in the drafts was newly measured. It did not pick a path, a tool name, a palette or a positioning for him. Speaker names are left out because this repo is public.
+- **What I understand now / still do not understand:** Not yet stated by me. What the drafting found: the work done so far is strong on evidence and thin on artifacts a stranger can open (a deployed interface, a Figma board, a recorded pitch).
+- **Evidence and next step:** `ASSIGNMENTS.md` and the nine folders. Next: I read them, pick the positioning (evaluator or builder), then decide which blocked pieces to do first (the Assignment 7 lookups, the Figma board, the website).
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -323,3 +341,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-11 | feat(fall-2026): assignment 6B worked example — Brown_Nik_A5B_BuildTheRecipe.pdf (12 pages) |
 | 2026-10-11 | feat(fall-2026): assignment 6B worked example — make_pdf.py (PDF build script) |
 | 2026-10-11 | docs(fall-2026): log the rename + assignment-6B worked example in FRICTIONAL.md |
+| 2026-10-17 | docs(fall-2026): rough drafts for assignments 7-11, midterm, final, participation and TRACE |
