@@ -6,8 +6,8 @@ records live here.
 
 ## Folders
 
-- `greenhouse/` — **53 records** | 2026-09-26 | Kept postings from Greenhouse-hosted boards (design-tool companies). File: `verified-2026-09-26.json`.
-- `ashby/` — **34 records** | 2026-09-26 | Kept postings from Ashby-hosted boards (AI labs: OpenAI, Anthropic, Writer, Notion, others). File: `verified-2026-09-26.json`.
+- `greenhouse/` — **53 records** | 2026-09-26 | Kept postings from 8 of the 11 Greenhouse-hosted boards (Anthropic, Figma, GitLab, HubSpot, Netlify, Stripe, Vercel, Webflow). File: `verified-2026-09-26.json`.
+- `ashby/` — **34 records** | 2026-09-26 | Kept postings from 5 of the 6 Ashby-hosted boards (OpenAI, Notion, Replit, Supabase, Writer). File: `verified-2026-09-26.json`.
 - `smartrecruiters/` — **10 records** | 2026-09-26 | Kept postings from SmartRecruiters-hosted boards (Canva). File: `verified-2026-09-26.json`. **Below the 25-record bar** — see below.
 
 ## Quality gate applied (all three folders)
@@ -21,11 +21,11 @@ for the run files and both audits).
 
 ## Records rejected and why
 
-- **Greenhouse:** the run fetched the majority of 3,446 postings; the filter
+- **Greenhouse:** the run fetched 2,103 of the 3,446 postings; the filter
   kept 53. The rest failed the teaching-interest rules (no role/title/topic
   match) — rejections are logged with reasons in the run files, not here.
-- **Ashby:** same — 34 kept of the fetched postings; the rest rejected by rule.
-- **SmartRecruiters:** 10 kept. The Canva board fetched 248 postings; only 10
+- **Ashby:** same — 34 kept of the 1,146 fetched postings; the rest rejected by rule.
+- **SmartRecruiters:** 10 kept. The Canva board fetched 197 postings in this run; only 10
   matched the teaching-interest filter. This is a **thin source**: it clears
   the quality gate but **does not meet the 25-record minimum** for a verified
   source folder. Recorded as TODO: DATA SOURCE in the recipe — either more

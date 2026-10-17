@@ -99,4 +99,8 @@ def build_ui():
 
 
 if __name__ == "__main__":
-    build_ui().launch(server_name="127.0.0.1", server_port=7860)
+    # Locally this serves on 127.0.0.1:7860. On Hugging Face Spaces the platform sets
+    # GRADIO_SERVER_NAME / GRADIO_SERVER_PORT, and passing fixed values here would override them
+    # and leave the Space unreachable, so read the environment first.
+    build_ui().launch(server_name=os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1"),
+                      server_port=int(os.environ.get("GRADIO_SERVER_PORT", "7860")))

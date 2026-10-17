@@ -275,6 +275,21 @@ Every push to GitHub is listed at the bottom with its date and commit note.
 - **What I understand now / still do not understand:** Not yet stated by me. What the drafting found: the work done so far is strong on evidence and thin on artifacts a stranger can open (a deployed interface, a Figma board, a recorded pitch).
 - **Evidence and next step:** `ASSIGNMENTS.md` and the nine folders. Next: I read them, pick the positioning (evaluator or builder), then decide which blocked pieces to do first (the Assignment 7 lookups, the Figma board, the website).
 
+### 2026-10-17 — Assignment 6A and 6B: a pipeline run, corrections, and whether a website counts
+
+- **Date and what I was working on:** 2026-10-17. Closing gaps in the worked examples for Assignments 6A (Wrap Your Tool) and 6B (Build the Recipe) against the current Canvas briefs.
+- **I tried / expected:** I said: *"I want you to work on assignment six A, six B. Would a website or websites be applicable to six A wrap"*. Then: *"So the way I read it, if one can view my search tool via the website, Bear Brown.co, and it showed the output of the search at bearbrown.co, that would apply to 6A Wrap Your Tool."* I expected a clear answer on the website and 6B moved forward.
+- **What happened:**
+  - **The website question:** a page on bearbrown.co does satisfy the "public URL" requirement of 6A, which allows "or equivalent" hosting. The brief still names Gradio or Streamlit as the framework, and bearbrown.co does not run a Python server, so the app runs on a free Hugging Face Space and the site embeds it. Details and steps are in `wrap-your-tool/DEPLOY.md`.
+  - **6B Part 4 was missing.** The Canvas brief's Part 4 is a pipeline run with a run log, gate decisions and a report in `logs/reports/`. The folder had a "/snickerdoodle" audit instead, from an older numbering of the brief (5B).
+  - **The run:** `run_recipe.py` replayed the responses saved on 2026-09-26 through the four layers. Gates 1–3 passed their machine checks (18 of 18 boards, 3,446 postings, 97 kept, 0 duplicates, 57 report claims all linked to a posting). The replay reproduced the committed run exactly. The script stops at Gate 4 and records every human decision as pending.
+  - **Problems found:** `collect.py --from-raw` only works on the date of the run (it names raw files by today's date); the collector does not write the quality report its docstring promises; the 6B files said the 2026-09-26 run fetched 248 Canva postings (it fetched 197) and put Anthropic on Ashby (it is on Greenhouse); `brand_config.json` was a single minified line, against this folder's rule that JSON be indented.
+  - **Not done:** nothing was deployed, no screenshots were taken and no user tests were run. Gradio is not installed on this Mac, so the interface has not been started here.
+- **What I did:** Asked the question and told Claude Code how I read the brief. Decisions still mine: whether to embed on bearbrown.co, whether to run the pipeline live, and every gate decision.
+- **What Claude or another person contributed:** Claude Code wrote `run_recipe.py`, `part-4-pipeline-run.md`, `wrap-your-tool/DEPLOY.md`, `requirements.txt` and `SPACE_README.md`; changed one launch line in `app.py` so the app can run on a Hugging Face Space; reindented `brand_config.json` (data unchanged, checked by parsing); corrected the Canva and Anthropic statements. Claude Code did not deploy anything, touch the site repository, or record any approval for me. I have not reviewed the changes.
+- **What I understand now / still do not understand:** Not yet stated by me. What the work found: the recipe runs and its checks hold on replayed data; whether it holds on a live fetch has not been tested.
+- **Evidence and next step:** `build-the-recipe/part-4-pipeline-run.md`, `build-the-recipe/logs/`, `wrap-your-tool/DEPLOY.md`. Next: decide on the Hugging Face Space and the bearbrown.co embed, make the gate decisions in `part-4-pipeline-run.md`, rebuild the 6B PDF, and run the three user tests.
+
 ## GitHub pushes
 
 One line per push to GitHub: the date and the commit note. The commit ID for each push is in `git log`; a commit can't contain its own ID.
@@ -342,3 +357,4 @@ One line per push to GitHub: the date and the commit note. The commit ID for eac
 | 2026-10-11 | feat(fall-2026): assignment 6B worked example — make_pdf.py (PDF build script) |
 | 2026-10-11 | docs(fall-2026): log the rename + assignment-6B worked example in FRICTIONAL.md |
 | 2026-10-17 | docs(fall-2026): rough drafts for assignments 7-11, midterm, final, participation and TRACE |
+| 2026-10-17 | feat(fall-2026): 6A deploy path and 6B pipeline run with a conductor script and corrections |

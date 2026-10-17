@@ -1,0 +1,78 @@
+{
+  "workflow": "lectern",
+  "run_id": "lectern-2026-10-17",
+  "mode": "replay of saved responses dated 2026-09-26 (no live fetch)",
+  "steps_completed": [
+    "layer1-replay",
+    "layer2-collect",
+    "layer3-demand-report",
+    "layer4-report"
+  ],
+  "records_seen": 3446,
+  "records_kept": 97,
+  "rejects": {
+    "only 2 topic words, no role word in title": 63,
+    "only 1 topic words, no role word in title": 945,
+    "no-keyword-match": 2341
+  },
+  "duplicates": 0,
+  "flags": [],
+  "stop_conditions": [
+    "Phase Gate 4: awaiting Professor Bear's approval"
+  ],
+  "generated_at": "2026-10-17T18:38:53+00:00",
+  "fetch_counts": {
+    "Airtable": 3,
+    "Anthropic": 618,
+    "Canva": 197,
+    "Figma": 163,
+    "GitLab": 199,
+    "HubSpot": 133,
+    "Jasper AI": 6,
+    "Miro": 28,
+    "Netlify": 4,
+    "Notion": 128,
+    "OpenAI": 830,
+    "Replit": 75,
+    "Stripe": 702,
+    "Supabase": 56,
+    "Twilio": 138,
+    "Vercel": 88,
+    "Webflow": 27,
+    "Writer": 51
+  },
+  "trusted_run": {
+    "verdict": null,
+    "reason": "not determined: a replay has no source-reported total and no previous trusted run to compare"
+  },
+  "gates": {
+    "gate1_ingest": {
+      "judgment_type": "IJ",
+      "machine_check": "PASS",
+      "detail": "18 of 18 watched boards had a non-empty saved response",
+      "not_exercised": "count-drift against a previous trusted run, because a replay has no live total to compare",
+      "human_decision": "PENDING"
+    },
+    "gate2_gigo": {
+      "judgment_type": "IJ",
+      "machine_check": "PASS",
+      "detail": "3446 postings fetched, 97 kept; 0 missing a required field; 0 non-YYYY-MM-DD dates; 0 duplicate kept records; 0 kept records with no matched-words trace; kept set identical to the committed run of 2026-09-26: True",
+      "not_exercised": "trusted-run thresholds (>=90% of source-reported total, >=70% of previous trusted run)",
+      "human_decision": "PENDING"
+    },
+    "gate3_traceable": {
+      "judgment_type": "TO",
+      "machine_check": "PASS",
+      "detail": "57 claims in the report, 0 without a link, 0 links not found in the run's postings; 18 ranked companies, 0 whose board total differs from the run",
+      "not_exercised": "recomputing the per-company signal-role counts; only links and board totals were checked",
+      "human_decision": "PENDING"
+    },
+    "gate4_shippable": {
+      "judgment_type": "TO",
+      "machine_check": "NOT RUN",
+      "detail": "Gate 4 is a human read: could a non-technical reader answer which companies, what roles, what is new?",
+      "not_exercised": "the new/gone diff against a previous trusted run (TODO: DEV in the recipe), and the human top-line label",
+      "human_decision": "PENDING - the recipe stops here every run"
+    }
+  }
+}

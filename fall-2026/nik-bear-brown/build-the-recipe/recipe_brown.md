@@ -31,7 +31,8 @@ Step 1.2  Ashby posting API
 
 Step 1.3  SmartRecruiters postings API
   Action:  Paged fetch (100/page), then one extra call per posting for the
-           description (Canva: 248 postings, 251 requests, ~3.5 min).
+           description (Canva: 248 postings and about 3.5 minutes in the
+           2026-09-19 sweep; 197 postings in the 2026-09-26 run).
   Output:  data/raw/smartrecruiters/YYYY-MM-DD/<board>.json
   TODO:    TODO: DATA SOURCE — only one SmartRecruiters board (Canva) is wired
            up; 10 verified records in the last run, below the 25-record bar.
@@ -148,6 +149,8 @@ The recipe cannot tell the difference — you can, by opening the board.
   TODO: DEFINE        Confirm the trusted-run thresholds (≥90% / ≥70%) after
                       two more weekly runs.
   TODO: DEV           Script the new/gone native-ID diff (currently by hand).
+                      (Gates 1-3 and the agent-output JSON are scripted in
+                      run_recipe.py as of 2026-10-17; the diff is not.)
   TODO: APPROVE       Human approves the final demand report before it ships
                       (Phase Gate 4) — the conductor stops here every run.
   TODO: REPORT FIELD  Human writes the top-line "what's new" takeaway label.
